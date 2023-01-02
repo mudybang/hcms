@@ -1,5 +1,5 @@
 writable/session/ci_session*
-writable/uploads/**/**/*.jpg
+writable/uploads/**/contract/**
 writable/debugbar/**
 env
 dump.rdb
