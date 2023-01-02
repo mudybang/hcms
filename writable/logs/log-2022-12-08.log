@@ -1,0 +1,253 @@
+CRITICAL - 2022-12-08 09:05:51 --> Call to undefined function easyui_combobox_master()
+in ROOTPATH/Modules/Employee/Views/dataview.php on line 48.
+ 1 SYSTEMPATH/View/View.php(213): include()
+ 2 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render()
+ 4 ROOTPATH/Modules/Employee/Controllers/Employee.php(39): view()
+ 5 SYSTEMPATH/CodeIgniter.php(927): Modules\Employee\Controllers\Employee->index()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-08 09:06:19 --> Undefined property: Modules\Employee\Controllers\Employee::$input
+in ROOTPATH/Modules/Employee/Controllers/Employee.php on line 72.
+ 1 ROOTPATH/Modules/Employee/Controllers/Employee.php(72): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(927): Modules\Employee\Controllers\Employee->get_data()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-08 09:06:36 --> Undefined property: Modules\Employee\Controllers\Employee::$input
+in ROOTPATH/Modules/Employee/Controllers/Employee.php on line 72.
+ 1 ROOTPATH/Modules/Employee/Controllers/Employee.php(72): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(927): Modules\Employee\Controllers\Employee->get_data()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-08 09:22:13 --> Invalid file: topmenu.php
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render()
+ 3 ROOTPATH/Modules/Employee/Views/profile.php(3): view()
+ 4 SYSTEMPATH/View/View.php(213): include('ROOTPATH/Modules/Employee/Views/profile.php')
+ 5 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render()
+ 7 ROOTPATH/Modules/Employee/Controllers/Employee.php(65): view()
+ 8 SYSTEMPATH/CodeIgniter.php(927): Modules\Employee\Controllers\Employee->profile()
+ 9 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-08 09:23:26 --> Invalid file: topmenu.php
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render()
+ 3 ROOTPATH/Modules/Employee/Views/profile.php(3): view()
+ 4 SYSTEMPATH/View/View.php(213): include('ROOTPATH/Modules/Employee/Views/profile.php')
+ 5 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render()
+ 7 ROOTPATH/Modules/Employee/Controllers/Employee.php(65): view()
+ 8 SYSTEMPATH/CodeIgniter.php(927): Modules\Employee\Controllers\Employee->profile()
+ 9 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-08 13:40:21 --> Undefined variable $History
+in ROOTPATH/Modules/Employee/Controllers/Employee.php on line 280.
+ 1 ROOTPATH/Modules/Employee/Controllers/Employee.php(280): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(927): Modules\Employee\Controllers\Employee->update()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-08 13:40:34 --> Undefined variable $History
+in ROOTPATH/Modules/Employee/Controllers/Employee.php on line 280.
+ 1 ROOTPATH/Modules/Employee/Controllers/Employee.php(280): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(927): Modules\Employee\Controllers\Employee->update()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-08 17:58:00 --> Undefined constant "current_url"
+in ROOTPATH/Modules/Employee/Views/profile.php on line 18.
+ 1 SYSTEMPATH/View/View.php(213): include()
+ 2 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render()
+ 4 ROOTPATH/Modules/Employee/Controllers/EmployeeBio.php(47): view()
+ 5 SYSTEMPATH/CodeIgniter.php(927): Modules\Employee\Controllers\EmployeeBio->index()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-08 18:31:34 --> Call to undefined function Modules\Employee\Controllers\MEmployeeBio()
+in ROOTPATH/Modules/Employee/Controllers/EmployeeBio.php on line 70.
+ 1 SYSTEMPATH/CodeIgniter.php(927): Modules\Employee\Controllers\EmployeeBio->update()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-08 18:34:12 --> Undefined property: App\Libraries\UploadFile::$request
+in APPPATH/Libraries/UploadFile.php on line 13.
+ 1 APPPATH/Libraries/UploadFile.php(13): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 ROOTPATH/Modules/Employee/Controllers/EmployeeBio.php(60): App\Libraries\UploadFile->UploadBio()
+ 3 SYSTEMPATH/CodeIgniter.php(927): Modules\Employee\Controllers\EmployeeBio->update()
+ 4 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-08 18:40:57 --> Undefined array key "img_profile"
+in ROOTPATH/Modules/Employee/Views/profile.php on line 19.
+ 1 ROOTPATH/Modules/Employee/Views/profile.php(19): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('ROOTPATH/Modules/Employee/Views/profile.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render()
+ 5 ROOTPATH/Modules/Employee/Controllers/EmployeeBio.php(35): view()
+ 6 SYSTEMPATH/CodeIgniter.php(927): Modules\Employee\Controllers\EmployeeBio->index()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-08 18:54:25 --> Undefined variable $eid
+in APPPATH/Libraries/UploadFile.php on line 16.
+ 1 APPPATH/Libraries/UploadFile.php(16): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 ROOTPATH/Modules/Employee/Controllers/EmployeeBio.php(66): App\Libraries\UploadFile->UploadBio()
+ 3 SYSTEMPATH/CodeIgniter.php(927): Modules\Employee\Controllers\EmployeeBio->update()
+ 4 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-08 18:55:11 --> Call to undefined method App\Libraries\UploadFile::validate()
+in APPPATH/Libraries/UploadFile.php on line 29.
+ 1 ROOTPATH/Modules/Employee/Controllers/EmployeeBio.php(66): App\Libraries\UploadFile->UploadBio()
+ 2 SYSTEMPATH/CodeIgniter.php(927): Modules\Employee\Controllers\EmployeeBio->update()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-08 18:59:56 --> Undefined variable $eid
+in APPPATH/Libraries/UploadFile.php on line 17.
+ 1 APPPATH/Libraries/UploadFile.php(17): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 ROOTPATH/Modules/Employee/Controllers/EmployeeBio.php(66): App\Libraries\UploadFile->UploadBio()
+ 3 SYSTEMPATH/CodeIgniter.php(927): Modules\Employee\Controllers\EmployeeBio->update()
+ 4 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-08 19:00:11 --> CodeIgniter\Validation\Validation::withRequest(): Argument #1 ($request) must be of type CodeIgniter\HTTP\RequestInterface, null given, called in /var/www/html/ci4.ombagoes.com/system/Controller.php on line 140
+in SYSTEMPATH/Validation/Validation.php on line 386.
+ 1 SYSTEMPATH/Controller.php(140): CodeIgniter\Validation\Validation->withRequest()
+ 2 APPPATH/Libraries/UploadFile.php(30): CodeIgniter\Controller->validate()
+ 3 ROOTPATH/Modules/Employee/Controllers/EmployeeBio.php(66): App\Libraries\UploadFile->UploadBio()
+ 4 SYSTEMPATH/CodeIgniter.php(927): Modules\Employee\Controllers\EmployeeBio->update()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-08 19:23:56 --> There is no data to update.
+in SYSTEMPATH/BaseModel.php on line 867.
+ 1 SYSTEMPATH/BaseModel.php(867): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset()
+ 2 SYSTEMPATH/Model.php(693): CodeIgniter\BaseModel->update()
+ 3 ROOTPATH/Modules/Employee/Controllers/EmployeeBio.php(99): CodeIgniter\Model->update()
+ 4 ROOTPATH/Modules/Employee/Controllers/EmployeeBio.php(65): Modules\Employee\Controllers\EmployeeBio->uploadFiles()
+ 5 SYSTEMPATH/CodeIgniter.php(927): Modules\Employee\Controllers\EmployeeBio->update()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-08 19:29:54 --> There is no data to update.
+in SYSTEMPATH/BaseModel.php on line 867.
+ 1 SYSTEMPATH/BaseModel.php(867): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset()
+ 2 SYSTEMPATH/Model.php(693): CodeIgniter\BaseModel->update()
+ 3 ROOTPATH/Modules/Employee/Controllers/EmployeeBio.php(97): CodeIgniter\Model->update()
+ 4 ROOTPATH/Modules/Employee/Controllers/EmployeeBio.php(63): Modules\Employee\Controllers\EmployeeBio->uploadFiles()
+ 5 SYSTEMPATH/CodeIgniter.php(927): Modules\Employee\Controllers\EmployeeBio->update()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-08 23:29:13 --> mysqli_sql_exception: Unknown column 'id_employee' in 'where clause' in /var/www/html/ci4.ombagoes.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /var/www/html/ci4.ombagoes.com/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /var/www/html/ci4.ombagoes.com/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/ci4.ombagoes.com/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/ci4.ombagoes.com/system/Database/BaseBuilder.php(1718): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/ci4.ombagoes.com/Modules/Employee/Views/sibling.php(17): CodeIgniter\Database\BaseBuilder->getWhere()
+#5 /var/www/html/ci4.ombagoes.com/system/View/View.php(213): include('...')
+#6 /var/www/html/ci4.ombagoes.com/system/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 /var/www/html/ci4.ombagoes.com/system/Common.php(1134): CodeIgniter\View\View->render()
+#8 /var/www/html/ci4.ombagoes.com/Modules/Employee/Controllers/EmployeeSibling.php(35): view()
+#9 /var/www/html/ci4.ombagoes.com/system/CodeIgniter.php(927): Modules\Employee\Controllers\EmployeeSibling->index()
+#10 /var/www/html/ci4.ombagoes.com/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+#11 /var/www/html/ci4.ombagoes.com/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+#12 /var/www/html/ci4.ombagoes.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2022-12-08 23:29:13 --> Unknown column 'id_employee' in 'where clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1718): CodeIgniter\Database\BaseConnection->query()
+ 5 ROOTPATH/Modules/Employee/Views/sibling.php(17): CodeIgniter\Database\BaseBuilder->getWhere()
+ 6 SYSTEMPATH/View/View.php(213): include('ROOTPATH/Modules/Employee/Views/sibling.php')
+ 7 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render()
+ 9 ROOTPATH/Modules/Employee/Controllers/EmployeeSibling.php(35): view()
+10 SYSTEMPATH/CodeIgniter.php(927): Modules\Employee\Controllers\EmployeeSibling->index()
+11 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+12 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+13 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-08 23:30:26 --> Call to undefined function clearstr()
+in ROOTPATH/Modules/Employee/Views/sibling.php on line 25.
+ 1 SYSTEMPATH/View/View.php(213): include()
+ 2 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render()
+ 4 ROOTPATH/Modules/Employee/Controllers/EmployeeSibling.php(35): view()
+ 5 SYSTEMPATH/CodeIgniter.php(927): Modules\Employee\Controllers\EmployeeSibling->index()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-08 23:31:59 --> Call to undefined function clearstr()
+in ROOTPATH/Modules/Employee/Views/sibling.php on line 25.
+ 1 SYSTEMPATH/View/View.php(213): include()
+ 2 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render()
+ 4 ROOTPATH/Modules/Employee/Controllers/EmployeeSibling.php(35): view()
+ 5 SYSTEMPATH/CodeIgniter.php(927): Modules\Employee\Controllers\EmployeeSibling->index()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-08 23:47:20 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::get_where()
+in ROOTPATH/Modules/Employee/Controllers/EmployeeSibling.php on line 45.
+ 1 SYSTEMPATH/CodeIgniter.php(927): Modules\Employee\Controllers\EmployeeSibling->update()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-08 23:48:43 --> Undefined variable $db
+in ROOTPATH/Modules/Employee/Controllers/EmployeeSibling.php on line 45.
+ 1 ROOTPATH/Modules/Employee/Controllers/EmployeeSibling.php(45): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(927): Modules\Employee\Controllers\EmployeeSibling->update()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-08 23:49:03 --> mysqli_sql_exception: Unknown column 'sibling' in 'where clause' in /var/www/html/ci4.ombagoes.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /var/www/html/ci4.ombagoes.com/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /var/www/html/ci4.ombagoes.com/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/ci4.ombagoes.com/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/ci4.ombagoes.com/system/Database/BaseBuilder.php(1718): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/ci4.ombagoes.com/system/Model.php(772): CodeIgniter\Database\BaseBuilder->getWhere()
+#5 /var/www/html/ci4.ombagoes.com/Modules/Employee/Controllers/EmployeeSibling.php(55): CodeIgniter\Model->__call()
+#6 /var/www/html/ci4.ombagoes.com/system/CodeIgniter.php(927): Modules\Employee\Controllers\EmployeeSibling->update()
+#7 /var/www/html/ci4.ombagoes.com/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/html/ci4.ombagoes.com/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/html/ci4.ombagoes.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-12-08 23:49:03 --> Unknown column 'sibling' in 'where clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1718): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(772): CodeIgniter\Database\BaseBuilder->getWhere()
+ 6 ROOTPATH/Modules/Employee/Controllers/EmployeeSibling.php(55): CodeIgniter\Model->__call()
+ 7 SYSTEMPATH/CodeIgniter.php(927): Modules\Employee\Controllers\EmployeeSibling->update()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-08 23:50:45 --> CodeIgniter\Model::insert(): Argument #2 ($returnID) must be of type bool, array given, called in /var/www/html/ci4.ombagoes.com/Modules/Employee/Controllers/EmployeeSibling.php on line 60
+in SYSTEMPATH/Model.php on line 653.
+ 1 ROOTPATH/Modules/Employee/Controllers/EmployeeSibling.php(60): CodeIgniter\Model->insert()
+ 2 SYSTEMPATH/CodeIgniter.php(927): Modules\Employee\Controllers\EmployeeSibling->update()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-08 23:59:23 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::set()
+in ROOTPATH/Modules/Employee/Controllers/EmployeeSibling.php on line 57.
+ 1 SYSTEMPATH/CodeIgniter.php(927): Modules\Employee\Controllers\EmployeeSibling->update()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

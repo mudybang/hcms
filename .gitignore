@@ -1,0 +1,6 @@
+writable/session/**
+writable/upload/**
+env
+dump.rdb
+composer.*
+spark

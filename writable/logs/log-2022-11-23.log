@@ -1,0 +1,234 @@
+ERROR - 2022-11-23 01:20:18 --> mysqli_sql_exception: Table 'ci4ombagoescom.roles' doesn't exist in /var/www/html/ci4.ombagoes.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /var/www/html/ci4.ombagoes.com/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /var/www/html/ci4.ombagoes.com/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/ci4.ombagoes.com/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/ci4.ombagoes.com/app/Controllers/Role.php(21): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/ci4.ombagoes.com/system/CodeIgniter.php(927): App\Controllers\Role->get_data()
+#5 /var/www/html/ci4.ombagoes.com/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+#6 /var/www/html/ci4.ombagoes.com/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+#7 /var/www/html/ci4.ombagoes.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-11-23 01:20:18 --> Table 'ci4ombagoescom.roles' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 APPPATH/Controllers/Role.php(21): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Role->get_data()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-23 02:16:42 --> scandir(app/Modules/): Failed to open directory: No such file or directory
+in APPPATH/Config/Routes.php on line 36.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Config/Routes.php(36): scandir()
+ 3 SYSTEMPATH/CodeIgniter.php(789): require('APPPATH/Config/Routes.php')
+ 4 SYSTEMPATH/CodeIgniter.php(430): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 5 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-23 02:17:48 --> scandir(./app/Modules/): Failed to open directory: No such file or directory
+in APPPATH/Config/Routes.php on line 36.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Config/Routes.php(36): scandir()
+ 3 SYSTEMPATH/CodeIgniter.php(789): require('APPPATH/Config/Routes.php')
+ 4 SYSTEMPATH/CodeIgniter.php(430): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 5 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-23 02:18:29 --> scandir(/app/Modules/): Failed to open directory: No such file or directory
+in APPPATH/Config/Routes.php on line 36.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Config/Routes.php(36): scandir()
+ 3 SYSTEMPATH/CodeIgniter.php(789): require('APPPATH/Config/Routes.php')
+ 4 SYSTEMPATH/CodeIgniter.php(430): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 5 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-23 02:19:14 --> scandir(/var/www/html/ci4.ombagoes.com/public//app/Modules/): Failed to open directory: No such file or directory
+in APPPATH/Config/Routes.php on line 36.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Config/Routes.php(36): scandir()
+ 3 SYSTEMPATH/CodeIgniter.php(789): require('APPPATH/Config/Routes.php')
+ 4 SYSTEMPATH/CodeIgniter.php(430): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 5 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-23 02:19:15 --> scandir(/var/www/html/ci4.ombagoes.com/public//app/Modules/): Failed to open directory: No such file or directory
+in APPPATH/Config/Routes.php on line 36.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Config/Routes.php(36): scandir()
+ 3 SYSTEMPATH/CodeIgniter.php(789): require('APPPATH/Config/Routes.php')
+ 4 SYSTEMPATH/CodeIgniter.php(430): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 5 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-23 02:19:17 --> scandir(/var/www/html/ci4.ombagoes.com/public//app/Modules/): Failed to open directory: No such file or directory
+in APPPATH/Config/Routes.php on line 36.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Config/Routes.php(36): scandir()
+ 3 SYSTEMPATH/CodeIgniter.php(789): require('APPPATH/Config/Routes.php')
+ 4 SYSTEMPATH/CodeIgniter.php(430): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 5 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-23 02:19:41 --> scandir(/var/www/html/ci4.ombagoes.com/public//app/Modules/): Failed to open directory: No such file or directory
+in APPPATH/Config/Routes.php on line 36.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Config/Routes.php(36): scandir()
+ 3 SYSTEMPATH/CodeIgniter.php(789): require('APPPATH/Config/Routes.php')
+ 4 SYSTEMPATH/CodeIgniter.php(430): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 5 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-23 02:20:14 --> scandir(app/Modules/Menu): Failed to open directory: No such file or directory
+in APPPATH/Config/Routes.php on line 42.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Config/Routes.php(42): scandir()
+ 3 SYSTEMPATH/CodeIgniter.php(789): require('APPPATH/Config/Routes.php')
+ 4 SYSTEMPATH/CodeIgniter.php(430): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 5 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-23 02:20:36 --> scandir(app/Modules/Menu): Failed to open directory: No such file or directory
+in APPPATH/Config/Routes.php on line 42.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Config/Routes.php(42): scandir()
+ 3 SYSTEMPATH/CodeIgniter.php(789): require('APPPATH/Config/Routes.php')
+ 4 SYSTEMPATH/CodeIgniter.php(430): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 5 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-23 02:20:38 --> scandir(app/Modules/Menu): Failed to open directory: No such file or directory
+in APPPATH/Config/Routes.php on line 42.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Config/Routes.php(42): scandir()
+ 3 SYSTEMPATH/CodeIgniter.php(789): require('APPPATH/Config/Routes.php')
+ 4 SYSTEMPATH/CodeIgniter.php(430): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 5 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-23 02:20:52 --> scandir(app/Modules/Menu): Failed to open directory: No such file or directory
+in APPPATH/Config/Routes.php on line 42.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Config/Routes.php(42): scandir()
+ 3 SYSTEMPATH/CodeIgniter.php(789): require('APPPATH/Config/Routes.php')
+ 4 SYSTEMPATH/CodeIgniter.php(430): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 5 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-23 02:27:52 --> The namespace delimiter is a backslash (\), not a slash (/). Route handler: \../app/Modules/User/Controllers\User::index
+in SYSTEMPATH/Router/Router.php on line 466.
+ 1 SYSTEMPATH/Router/Router.php(466): CodeIgniter\Router\Exceptions\RouterException::forInvalidControllerName()
+ 2 SYSTEMPATH/Router/Router.php(181): CodeIgniter\Router\Router->checkRoutes()
+ 3 SYSTEMPATH/CodeIgniter.php(802): CodeIgniter\Router\Router->handle()
+ 4 SYSTEMPATH/CodeIgniter.php(430): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 5 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-23 02:34:55 --> scandir(/var/www/html/ci4.ombagoes.com/Modules/): Failed to open directory: No such file or directory
+in APPPATH/Config/Routes.php on line 61.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Config/Routes.php(61): scandir()
+ 3 SYSTEMPATH/CodeIgniter.php(789): require('APPPATH/Config/Routes.php')
+ 4 SYSTEMPATH/CodeIgniter.php(430): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 5 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-23 02:45:15 --> Invalid file: \Modules\User\Viewsdata.php
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render()
+ 3 ROOTPATH/Modules/User/Controllers/UserController.php(15): view()
+ 4 SYSTEMPATH/CodeIgniter.php(927): Modules\User\Controllers\UserController->index()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-23 03:53:25 --> Undefined variable $data
+in ROOTPATH/Modules/User/Controllers/UserController.php on line 11.
+ 1 ROOTPATH/Modules/User/Controllers/UserController.php(11): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(927): Modules\User\Controllers\UserController->index()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-23 04:00:18 --> Invalid file: \Modules\User\Viewsdata.php
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render()
+ 3 ROOTPATH/Modules/User/Controllers/UserController.php(12): view()
+ 4 SYSTEMPATH/CodeIgniter.php(927): Modules\User\Controllers\UserController->index()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-23 04:00:47 --> Class "App\Models\UserModel" not found
+in ROOTPATH/Modules/User/Controllers/UserController.php on line 18.
+ 1 SYSTEMPATH/CodeIgniter.php(927): Modules\User\Controllers\UserController->get_data()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-23 04:01:19 --> Undefined variable $userModel
+in ROOTPATH/Modules/User/Controllers/UserController.php on line 19.
+ 1 ROOTPATH/Modules/User/Controllers/UserController.php(19): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(927): Modules\User\Controllers\UserController->get_data()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-23 04:04:21 --> Invalid file: \Modules\User\Viewsdata.php
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render()
+ 3 ROOTPATH/Modules/User/Controllers/UserController.php(12): view()
+ 4 SYSTEMPATH/CodeIgniter.php(927): Modules\User\Controllers\UserController->index()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-23 20:21:27 --> mysqli_sql_exception: Table 'ci4ombagoescom.roles' doesn't exist in /var/www/html/ci4.ombagoes.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /var/www/html/ci4.ombagoes.com/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /var/www/html/ci4.ombagoes.com/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/ci4.ombagoes.com/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/ci4.ombagoes.com/app/Controllers/Role.php(21): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/ci4.ombagoes.com/system/CodeIgniter.php(927): App\Controllers\Role->get_data()
+#5 /var/www/html/ci4.ombagoes.com/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+#6 /var/www/html/ci4.ombagoes.com/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+#7 /var/www/html/ci4.ombagoes.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-11-23 20:21:27 --> Table 'ci4ombagoescom.roles' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 APPPATH/Controllers/Role.php(21): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Role->get_data()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-23 21:14:43 --> Attempt to read property "resultID" on array
+in ROOTPATH/Modules/User/Controllers/UserController.php on line 20.
+ 1 ROOTPATH/Modules/User/Controllers/UserController.php(20): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(927): Modules\User\Controllers\UserController->get_data()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-23 21:15:31 --> Attempt to read property "resultID" on array
+in ROOTPATH/Modules/User/Controllers/UserController.php on line 20.
+ 1 ROOTPATH/Modules/User/Controllers/UserController.php(20): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(927): Modules\User\Controllers\UserController->get_data()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-23 21:16:39 --> Attempt to read property "resultID" on array
+in ROOTPATH/Modules/User/Controllers/UserController.php on line 20.
+ 1 ROOTPATH/Modules/User/Controllers/UserController.php(20): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(927): Modules\User\Controllers\UserController->get_data()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-23 21:17:58 --> Call to a member function getNumRows() on array
+in ROOTPATH/Modules/User/Controllers/UserController.php on line 20.
+ 1 SYSTEMPATH/CodeIgniter.php(927): Modules\User\Controllers\UserController->get_data()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-23 21:18:07 --> Call to undefined method Modules\User\Models\UserModel::getNumRows
+in SYSTEMPATH/Model.php on line 774.
+ 1 ROOTPATH/Modules/User/Controllers/UserController.php(20): CodeIgniter\Model->__call()
+ 2 SYSTEMPATH/CodeIgniter.php(927): Modules\User\Controllers\UserController->get_data()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-23 21:19:23 --> Call to undefined method Modules\User\Models\UserModel::getNumRows
+in SYSTEMPATH/Model.php on line 774.
+ 1 ROOTPATH/Modules/User/Controllers/UserController.php(20): CodeIgniter\Model->__call()
+ 2 SYSTEMPATH/CodeIgniter.php(927): Modules\User\Controllers\UserController->get_data()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

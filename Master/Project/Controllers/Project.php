@@ -1,0 +1,114 @@
+<?php
+
+namespace Master\Project\Controllers;
+
+use App\Controllers\BaseController;
+use App\Libraries\UserPerm;
+use App\Libraries\PlatformDetect;
+use Master\Project\Models\MProject;
+
+class Project extends BaseController{
+    protected $db;
+    protected $perm;
+    protected $table;
+    protected $model;
+    protected $module_id;
+    protected $modules;
+    public function __construct(){
+        $this->db = db_connect();
+        $this->perm = new UserPerm();
+        $this->table = 'projects';
+        $this->model = new MProject();
+        $this->module_id = 50;
+        $this->modules = $this->perm->getModule($this->module_id);
+    }
+    public function index(){
+        if (auth()->loggedIn()) {
+            $data['parent'] = $this->modules['menu_label'];
+            $data['title'] = $this->modules['label'];
+            $data['db'] = $this->db;
+            $data['perm'] = $this->perm->getPerm($this->module_id);
+            $data['isMobile']=$this->request->getUserAgent()->isMobile();
+            return view("\Master\Project\Views\dataview",$data);
+        }else{
+            return redirect()->to('login');
+        }
+	}
+    public function get_data(){
+        $w=" WHERE TRUE";
+		if($this->request->getPost('sname'))$w.=" AND name like '%".$this->request->getPost('sname')."%'";
+        if($this->request->getPost('sbranch_id'))$w.=" AND branch_id =".$this->request->getPost('sbranch_id');
+		$page = isset($_POST['page']) ? intval($_POST['page']) : 1;
+        $rows = isset($_POST['rows']) ? intval($_POST['rows']) : 10;
+        $sort = isset($_POST['sort']) ? strval($_POST['sort']) : 'id';
+        $order = isset($_POST['order']) ? strval($_POST['order']) : 'ASC';
+        $offset = ($page-1) * $rows;
+
+        $results = array();
+        $sql="select p.*,b.name branch_name from ".$this->table." p
+            LEFT JOIN branchs b ON p.branch_id=b.id";
+        
+        $result['total'] = $this->db->query($sql)->getNumRows();
+        
+        $sqldata=$sql."$w order by $sort $order limit $offset,$rows";
+        $data=[];
+        foreach($this->db->query($sqldata)->getResultArray() as $row){
+            $row['ck']=$row['id'];
+            $data[]=$row;
+        }
+        $results=array_merge($result,array('rows'=>$data));
+		return $this->response->setJSON($results);
+	}
+    public function create(){
+        $data = [
+            'name' => $this->request->getPost('name'),
+            'code' => $this->request->getPost('code'),
+            'branch_id' => $this->request->getPost('branch_id'),
+            'address' => $this->request->getPost('address'),
+            'city' => $this->request->getPost('city'),
+            'province' => $this->request->getPost('province'),
+            'day_cut_off' => $this->request->getPost('day_cut_off'),
+            'latitude' => $this->request->getPost('latitude'),
+            'longitude' => $this->request->getPost('longitude'),
+            'limit_distances' => $this->request->getPost('limit_distances')
+        ];
+        if ($this->model->save($data) === false) {
+            return $this->response->setJSON([
+                'success'=>false,
+                'errorMessages'=>$this->model->errors()]);
+        }else{
+            return $this->response->setJSON([
+                'success'=>true,
+                'message'=>'Data Berhasil Dibuat',
+            ]);
+        }
+	}
+    public function update($id=null){
+        $data = [
+            'name' => $this->request->getPost('name'),
+            'code' => $this->request->getPost('code'),
+            'branch_id' => $this->request->getPost('branch_id'),
+            'address' => $this->request->getPost('address'),
+            'city' => $this->request->getPost('city'),
+            'province' => $this->request->getPost('province'),
+            'day_cut_off' => $this->request->getPost('day_cut_off'),
+            'latitude' => $this->request->getPost('latitude'),
+            'longitude' => $this->request->getPost('longitude'),
+            'limit_distances' => $this->request->getPost('limit_distances')
+        ];
+        if ($this->model->update($id, $data) === false) {
+            return $this->response->setJSON([
+                'success'=>false,
+                'errorMessages'=>$this->model->errors()]);
+        }else{
+            return $this->response->setJSON([
+                'success'=>true,
+                'message'=>'Data Berhasil Dibuat',
+            ]);
+        }
+	}
+    public function delete($id=null){
+        $this->model->delete($id);
+		return $this->response->setJSON(array('success'=>true,'message'=>'Data Berhasil Dihapus'));
+	}
+}

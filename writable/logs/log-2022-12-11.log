@@ -1,0 +1,453 @@
+ERROR - 2022-12-11 00:05:17 --> mysqli_sql_exception: Duplicate entry '2022-12-10-2' for key 'unq1' in /var/www/html/ci4.ombagoes.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /var/www/html/ci4.ombagoes.com/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /var/www/html/ci4.ombagoes.com/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/ci4.ombagoes.com/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/ci4.ombagoes.com/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/ci4.ombagoes.com/system/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 /var/www/html/ci4.ombagoes.com/system/BaseModel.php(749): CodeIgniter\Model->doInsert()
+#6 /var/www/html/ci4.ombagoes.com/system/Model.php(667): CodeIgniter\BaseModel->insert()
+#7 /var/www/html/ci4.ombagoes.com/Modules/Employee/Controllers/EmployeeHistory.php(62): CodeIgniter\Model->insert()
+#8 /var/www/html/ci4.ombagoes.com/system/CodeIgniter.php(927): Modules\Employee\Controllers\EmployeeHistory->create()
+#9 /var/www/html/ci4.ombagoes.com/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+#10 /var/www/html/ci4.ombagoes.com/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+#11 /var/www/html/ci4.ombagoes.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-12-11 00:05:17 --> Duplicate entry '2022-12-10-2' for key 'unq1'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH/BaseModel.php(749): CodeIgniter\Model->doInsert()
+ 7 SYSTEMPATH/Model.php(667): CodeIgniter\BaseModel->insert()
+ 8 ROOTPATH/Modules/Employee/Controllers/EmployeeHistory.php(62): CodeIgniter\Model->insert()
+ 9 SYSTEMPATH/CodeIgniter.php(927): Modules\Employee\Controllers\EmployeeHistory->create()
+10 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+11 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+12 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-11 00:06:48 --> Undefined variable $employee
+in ROOTPATH/Modules/Employee/Controllers/EmployeeHistory.php on line 93.
+ 1 ROOTPATH/Modules/Employee/Controllers/EmployeeHistory.php(93): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 ROOTPATH/Modules/Employee/Controllers/EmployeeHistory.php(78): Modules\Employee\Controllers\EmployeeHistory->syncdata()
+ 3 SYSTEMPATH/CodeIgniter.php(927): Modules\Employee\Controllers\EmployeeHistory->delete()
+ 4 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-11 00:10:20 --> unlink(/var/www/html/ci4.ombagoes.com/public//uploads/employees/history/): Is a directory
+in ROOTPATH/Modules/Employee/Controllers/EmployeeHistory.php on line 82.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 ROOTPATH/Modules/Employee/Controllers/EmployeeHistory.php(82): unlink()
+ 3 SYSTEMPATH/CodeIgniter.php(927): Modules\Employee\Controllers\EmployeeHistory->delete()
+ 4 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-11 00:18:38 --> Undefined variable $Img
+in ROOTPATH/Modules/Employee/Controllers/EmployeeHistory.php on line 105.
+ 1 ROOTPATH/Modules/Employee/Controllers/EmployeeHistory.php(105): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 ROOTPATH/Modules/Employee/Controllers/EmployeeHistory.php(66): Modules\Employee\Controllers\EmployeeHistory->uploadfile()
+ 3 SYSTEMPATH/CodeIgniter.php(927): Modules\Employee\Controllers\EmployeeHistory->create()
+ 4 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-11 00:19:13 --> Undefined variable $Img
+in ROOTPATH/Modules/Employee/Controllers/EmployeeHistory.php on line 105.
+ 1 ROOTPATH/Modules/Employee/Controllers/EmployeeHistory.php(105): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 ROOTPATH/Modules/Employee/Controllers/EmployeeHistory.php(66): Modules\Employee\Controllers\EmployeeHistory->uploadfile()
+ 3 SYSTEMPATH/CodeIgniter.php(927): Modules\Employee\Controllers\EmployeeHistory->create()
+ 4 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-11 13:50:46 --> Undefined property: CodeIgniter\View\View::$db
+in ROOTPATH/Modules/Employee/Views/repun.php on line 70.
+ 1 ROOTPATH/Modules/Employee/Views/repun.php(70): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('ROOTPATH/Modules/Employee/Views/repun.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render()
+ 5 ROOTPATH/Modules/Employee/Controllers/EmployeeRepun.php(37): view()
+ 6 SYSTEMPATH/CodeIgniter.php(927): Modules\Employee\Controllers\EmployeeRepun->index()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-11 13:52:34 --> Undefined property: CodeIgniter\View\View::$db
+in ROOTPATH/Modules/Employee/Views/repun.php on line 70.
+ 1 ROOTPATH/Modules/Employee/Views/repun.php(70): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('ROOTPATH/Modules/Employee/Views/repun.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render()
+ 5 ROOTPATH/Modules/Employee/Controllers/EmployeeRepun.php(37): view()
+ 6 SYSTEMPATH/CodeIgniter.php(927): Modules\Employee\Controllers\EmployeeRepun->index()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-11 13:53:35 --> Call to a member function result_array() on array
+in ROOTPATH/Modules/Employee/Views/repun.php on line 70.
+ 1 SYSTEMPATH/View/View.php(213): include()
+ 2 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render()
+ 4 ROOTPATH/Modules/Employee/Controllers/EmployeeRepun.php(37): view()
+ 5 SYSTEMPATH/CodeIgniter.php(927): Modules\Employee\Controllers\EmployeeRepun->index()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-11 14:22:17 --> Call to a member function getInsertID() on null
+in ROOTPATH/Modules/Employee/Controllers/EmployeeRepun.php on line 52.
+ 1 SYSTEMPATH/CodeIgniter.php(927): Modules\Employee\Controllers\EmployeeRepun->create_reward()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-11 14:23:52 --> Class "App\Controllers\UploadController" not found
+in ROOTPATH/Modules/Employee/Controllers/EmployeeRepun.php on line 53.
+ 1 SYSTEMPATH/CodeIgniter.php(927): Modules\Employee\Controllers\EmployeeRepun->create_reward()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-11 14:26:07 --> Cannot use object of type CodeIgniter\HTTP\RedirectResponse as array
+in ROOTPATH/Modules/Employee/Controllers/EmployeeRepun.php on line 55.
+ 1 SYSTEMPATH/CodeIgniter.php(927): Modules\Employee\Controllers\EmployeeRepun->create_reward()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-11 14:30:36 --> Cannot use object of type CodeIgniter\HTTP\RedirectResponse as array
+in ROOTPATH/Modules/Employee/Controllers/EmployeeRepun.php on line 55.
+ 1 SYSTEMPATH/CodeIgniter.php(927): Modules\Employee\Controllers\EmployeeRepun->create_reward()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-11 14:34:21 --> Undefined property: CodeIgniter\HTTP\RedirectResponse::$success
+in ROOTPATH/Modules/Employee/Controllers/EmployeeRepun.php on line 55.
+ 1 ROOTPATH/Modules/Employee/Controllers/EmployeeRepun.php(55): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(927): Modules\Employee\Controllers\EmployeeRepun->create_reward()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-11 14:37:31 --> Undefined property: CodeIgniter\HTTP\RedirectResponse::$success
+in ROOTPATH/Modules/Employee/Controllers/EmployeeRepun.php on line 55.
+ 1 ROOTPATH/Modules/Employee/Controllers/EmployeeRepun.php(55): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(927): Modules\Employee\Controllers\EmployeeRepun->create_reward()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-11 14:43:26 --> Undefined property: App\Libraries\UploadFile::$request
+in APPPATH/Libraries/UploadFile.php on line 13.
+ 1 APPPATH/Libraries/UploadFile.php(13): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 ROOTPATH/Modules/Employee/Controllers/EmployeeRepun.php(54): App\Libraries\UploadFile->single_upload()
+ 3 SYSTEMPATH/CodeIgniter.php(927): Modules\Employee\Controllers\EmployeeRepun->create_reward()
+ 4 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-11 14:44:44 --> Call to a member function isValid() on null
+in APPPATH/Libraries/UploadFile.php on line 17.
+ 1 ROOTPATH/Modules/Employee/Controllers/EmployeeRepun.php(54): App\Libraries\UploadFile->single_upload()
+ 2 SYSTEMPATH/CodeIgniter.php(927): Modules\Employee\Controllers\EmployeeRepun->create_reward()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-11 14:45:40 --> Call to a member function getClientExtension() on null
+in APPPATH/Libraries/UploadFile.php on line 17.
+ 1 ROOTPATH/Modules/Employee/Controllers/EmployeeRepun.php(54): App\Libraries\UploadFile->single_upload()
+ 2 SYSTEMPATH/CodeIgniter.php(927): Modules\Employee\Controllers\EmployeeRepun->create_reward()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-11 14:54:28 --> Call to a member function getClientExtension() on null
+in APPPATH/Libraries/UploadFile.php on line 19.
+ 1 ROOTPATH/Modules/Employee/Controllers/EmployeeRepun.php(54): App\Libraries\UploadFile->single_upload()
+ 2 SYSTEMPATH/CodeIgniter.php(927): Modules\Employee\Controllers\EmployeeRepun->create_reward()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-11 14:54:46 --> Call to a member function getClientExtension() on null
+in APPPATH/Libraries/UploadFile.php on line 19.
+ 1 ROOTPATH/Modules/Employee/Controllers/EmployeeRepun.php(54): App\Libraries\UploadFile->single_upload()
+ 2 SYSTEMPATH/CodeIgniter.php(927): Modules\Employee\Controllers\EmployeeRepun->create_reward()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-11 14:57:37 --> Call to undefined method App\Libraries\UploadFile::validate()
+in APPPATH/Libraries/UploadFile.php on line 40.
+ 1 ROOTPATH/Modules/Employee/Controllers/EmployeeRepun.php(54): App\Libraries\UploadFile->single_upload()
+ 2 SYSTEMPATH/CodeIgniter.php(927): Modules\Employee\Controllers\EmployeeRepun->create_reward()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-11 15:02:13 --> Call to undefined method App\Libraries\UploadFile::validate()
+in APPPATH/Libraries/UploadFile.php on line 41.
+ 1 ROOTPATH/Modules/Employee/Controllers/EmployeeRepun.php(54): App\Libraries\UploadFile->single_upload()
+ 2 SYSTEMPATH/CodeIgniter.php(927): Modules\Employee\Controllers\EmployeeRepun->create_reward()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-11 15:02:31 --> Call to undefined method App\Libraries\UploadFile::validate()
+in APPPATH/Libraries/UploadFile.php on line 41.
+ 1 ROOTPATH/Modules/Employee/Controllers/EmployeeRepun.php(54): App\Libraries\UploadFile->single_upload()
+ 2 SYSTEMPATH/CodeIgniter.php(927): Modules\Employee\Controllers\EmployeeRepun->create_reward()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-11 15:03:48 --> Call to undefined method App\Libraries\UploadFile::validate()
+in APPPATH/Libraries/UploadFile.php on line 38.
+ 1 ROOTPATH/Modules/Employee/Controllers/EmployeeRepun.php(54): App\Libraries\UploadFile->single_upload()
+ 2 SYSTEMPATH/CodeIgniter.php(927): Modules\Employee\Controllers\EmployeeRepun->create_reward()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-11 15:05:06 --> Undefined property: Modules\Employee\Controllers\EmployeeRepun::$validate
+in ROOTPATH/Modules/Employee/Controllers/EmployeeRepun.php on line 54.
+ 1 ROOTPATH/Modules/Employee/Controllers/EmployeeRepun.php(54): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(927): Modules\Employee\Controllers\EmployeeRepun->create_reward()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-11 15:16:56 --> Call to undefined method App\Libraries\UploadFile::validate()
+in APPPATH/Libraries/UploadFile.php on line 37.
+ 1 ROOTPATH/Modules/Employee/Controllers/EmployeeRepun.php(54): App\Libraries\UploadFile->single_upload()
+ 2 SYSTEMPATH/CodeIgniter.php(927): Modules\Employee\Controllers\EmployeeRepun->create_reward()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-11 15:18:00 --> Attempt to read property "success" on array
+in ROOTPATH/Modules/Employee/Controllers/EmployeeRepun.php on line 55.
+ 1 ROOTPATH/Modules/Employee/Controllers/EmployeeRepun.php(55): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(927): Modules\Employee\Controllers\EmployeeRepun->create_reward()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-11 15:18:43 --> Undefined array key "filename"
+in ROOTPATH/Modules/Employee/Controllers/EmployeeRepun.php on line 56.
+ 1 ROOTPATH/Modules/Employee/Controllers/EmployeeRepun.php(56): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(927): Modules\Employee\Controllers\EmployeeRepun->create_reward()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-11 15:21:39 --> Call to protected method CodeIgniter\Controller::validate() from scope App\Libraries\UploadFile
+in APPPATH/Libraries/UploadFile.php on line 40.
+ 1 ROOTPATH/Modules/Employee/Controllers/EmployeeRepun.php(54): App\Libraries\UploadFile->single_upload()
+ 2 SYSTEMPATH/CodeIgniter.php(927): Modules\Employee\Controllers\EmployeeRepun->create_reward()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-11 15:22:57 --> Call to undefined method App\Libraries\UploadFile::validate()
+in APPPATH/Libraries/UploadFile.php on line 41.
+ 1 ROOTPATH/Modules/Employee/Controllers/EmployeeRepun.php(54): App\Libraries\UploadFile->single_upload()
+ 2 SYSTEMPATH/CodeIgniter.php(927): Modules\Employee\Controllers\EmployeeRepun->create_reward()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-11 15:23:26 --> Call to undefined method App\Libraries\UploadFile::validate()
+in APPPATH/Libraries/UploadFile.php on line 41.
+ 1 ROOTPATH/Modules/Employee/Controllers/EmployeeRepun.php(54): App\Libraries\UploadFile->single_upload()
+ 2 SYSTEMPATH/CodeIgniter.php(927): Modules\Employee\Controllers\EmployeeRepun->create_reward()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-11 15:26:04 --> Could not move file phpGHOA4d to /var/www/html/ci4.ombagoes.com/writable/uploads/employees/reward/ ()
+in SYSTEMPATH/HTTP/Files/UploadedFile.php on line 149.
+ 1 SYSTEMPATH/HTTP/Files/UploadedFile.php(149): CodeIgniter\HTTP\Exceptions\HTTPException::forMoveFailed()
+ 2 APPPATH/Libraries/UploadFile.php(46): CodeIgniter\HTTP\Files\UploadedFile->move()
+ 3 ROOTPATH/Modules/Employee/Controllers/EmployeeRepun.php(54): App\Libraries\UploadFile->single_upload()
+ 4 SYSTEMPATH/CodeIgniter.php(927): Modules\Employee\Controllers\EmployeeRepun->create_reward()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-11 15:27:18 --> Call to a member function setJSON() on null
+in APPPATH/Libraries/UploadFile.php on line 47.
+ 1 ROOTPATH/Modules/Employee/Controllers/EmployeeRepun.php(54): App\Libraries\UploadFile->single_upload()
+ 2 SYSTEMPATH/CodeIgniter.php(927): Modules\Employee\Controllers\EmployeeRepun->create_reward()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-11 15:35:48 --> Class "App\Libraries\Controller" not found
+in APPPATH/Libraries/UploadFile.php on line 8.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(282): include_once()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile()
+ 3 SYSTEMPATH/Autoloader/Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+ 4 ROOTPATH/Modules/Employee/Controllers/EmployeeRepun.php(53): CodeIgniter\Autoloader\Autoloader->loadClass()
+ 5 SYSTEMPATH/CodeIgniter.php(927): Modules\Employee\Controllers\EmployeeRepun->create_reward()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-11 15:37:12 --> Undefined variable $filename
+in ROOTPATH/Modules/Employee/Controllers/EmployeeRepun.php on line 57.
+ 1 ROOTPATH/Modules/Employee/Controllers/EmployeeRepun.php(57): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(927): Modules\Employee\Controllers\EmployeeRepun->create_reward()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-11 15:40:01 --> Undefined variable $edit
+in ROOTPATH/Modules/Employee/Views/repun.php on line 31.
+ 1 ROOTPATH/Modules/Employee/Views/repun.php(31): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('ROOTPATH/Modules/Employee/Views/repun.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render()
+ 5 ROOTPATH/Modules/Employee/Controllers/EmployeeRepun.php(38): view()
+ 6 SYSTEMPATH/CodeIgniter.php(927): Modules\Employee\Controllers\EmployeeRepun->index()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-11 15:44:53 --> Non-static method CodeIgniter\BaseModel::find() cannot be called statically
+in ROOTPATH/Modules/Employee/Controllers/EmployeeRepun.php on line 35.
+ 1 SYSTEMPATH/CodeIgniter.php(927): Modules\Employee\Controllers\EmployeeRepun->index()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-11 15:47:34 --> Undefined variable $eid_number
+in ROOTPATH/Modules/Employee/Views/repun.php on line 31.
+ 1 ROOTPATH/Modules/Employee/Views/repun.php(31): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('ROOTPATH/Modules/Employee/Views/repun.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render()
+ 5 ROOTPATH/Modules/Employee/Controllers/EmployeeRepun.php(41): view()
+ 6 SYSTEMPATH/CodeIgniter.php(927): Modules\Employee\Controllers\EmployeeRepun->index()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-11 15:47:51 --> Attempt to read property "eid_number" on array
+in ROOTPATH/Modules/Employee/Controllers/EmployeeRepun.php on line 37.
+ 1 ROOTPATH/Modules/Employee/Controllers/EmployeeRepun.php(37): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(927): Modules\Employee\Controllers\EmployeeRepun->index()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-11 15:48:36 --> Non-static method CodeIgniter\BaseModel::find() cannot be called statically
+in ROOTPATH/Modules/Employee/Controllers/EmployeeRepun.php on line 37.
+ 1 SYSTEMPATH/CodeIgniter.php(927): Modules\Employee\Controllers\EmployeeRepun->index()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-11 15:54:23 --> Non-static method App\Libraries\UploadFile::single_upload() cannot be called statically
+in ROOTPATH/Modules/Employee/Controllers/EmployeeRepun.php on line 57.
+ 1 SYSTEMPATH/CodeIgniter.php(927): Modules\Employee\Controllers\EmployeeRepun->create_reward()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-11 15:54:29 --> Non-static method App\Libraries\UploadFile::single_upload() cannot be called statically
+in ROOTPATH/Modules/Employee/Controllers/EmployeeRepun.php on line 57.
+ 1 SYSTEMPATH/CodeIgniter.php(927): Modules\Employee\Controllers\EmployeeRepun->create_reward()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-11 17:01:29 --> The original file is not a valid file.
+in SYSTEMPATH/HTTP/Files/UploadedFile.php on line 137.
+ 1 SYSTEMPATH/HTTP/Files/UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+ 2 APPPATH/Libraries/UploadFile.php(85): CodeIgniter\HTTP\Files\UploadedFile->move()
+ 3 ROOTPATH/Modules/Employee/Controllers/EmployeeBio.php(65): App\Libraries\UploadFile->multiple_upload()
+ 4 SYSTEMPATH/CodeIgniter.php(927): Modules\Employee\Controllers\EmployeeBio->update()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-11 17:03:46 --> The original file is not a valid file.
+in SYSTEMPATH/HTTP/Files/UploadedFile.php on line 137.
+ 1 SYSTEMPATH/HTTP/Files/UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+ 2 APPPATH/Libraries/UploadFile.php(85): CodeIgniter\HTTP\Files\UploadedFile->move()
+ 3 ROOTPATH/Modules/Employee/Controllers/EmployeeBio.php(65): App\Libraries\UploadFile->multiple_upload()
+ 4 SYSTEMPATH/CodeIgniter.php(927): Modules\Employee\Controllers\EmployeeBio->update()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-11 17:07:08 --> The original file is not a valid file.
+in SYSTEMPATH/HTTP/Files/UploadedFile.php on line 137.
+ 1 SYSTEMPATH/HTTP/Files/UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+ 2 APPPATH/Libraries/UploadFile.php(85): CodeIgniter\HTTP\Files\UploadedFile->move()
+ 3 ROOTPATH/Modules/Employee/Controllers/EmployeeBio.php(65): App\Libraries\UploadFile->multiple_upload()
+ 4 SYSTEMPATH/CodeIgniter.php(927): Modules\Employee\Controllers\EmployeeBio->update()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-11 17:07:59 --> Array to string conversion
+in ROOTPATH/Modules/Employee/Views/bio.php on line 14.
+ 1 ROOTPATH/Modules/Employee/Views/bio.php(14): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('ROOTPATH/Modules/Employee/Views/bio.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render()
+ 5 ROOTPATH/Modules/Employee/Controllers/EmployeeBio.php(37): view()
+ 6 SYSTEMPATH/CodeIgniter.php(927): Modules\Employee\Controllers\EmployeeBio->index()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-11 17:12:18 --> The original file is not a valid file.
+in SYSTEMPATH/HTTP/Files/UploadedFile.php on line 137.
+ 1 SYSTEMPATH/HTTP/Files/UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+ 2 APPPATH/Libraries/UploadFile.php(85): CodeIgniter\HTTP\Files\UploadedFile->move()
+ 3 ROOTPATH/Modules/Employee/Controllers/EmployeeBio.php(65): App\Libraries\UploadFile->multiple_upload()
+ 4 SYSTEMPATH/CodeIgniter.php(927): Modules\Employee\Controllers\EmployeeBio->update()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-11 17:14:28 --> The original file is not a valid file.
+in SYSTEMPATH/HTTP/Files/UploadedFile.php on line 137.
+ 1 SYSTEMPATH/HTTP/Files/UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+ 2 APPPATH/Libraries/UploadFile.php(86): CodeIgniter\HTTP\Files\UploadedFile->move()
+ 3 ROOTPATH/Modules/Employee/Controllers/EmployeeBio.php(65): App\Libraries\UploadFile->multiple_upload()
+ 4 SYSTEMPATH/CodeIgniter.php(927): Modules\Employee\Controllers\EmployeeBio->update()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-11 17:14:39 --> The original file is not a valid file.
+in SYSTEMPATH/HTTP/Files/UploadedFile.php on line 137.
+ 1 SYSTEMPATH/HTTP/Files/UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+ 2 APPPATH/Libraries/UploadFile.php(86): CodeIgniter\HTTP\Files\UploadedFile->move()
+ 3 ROOTPATH/Modules/Employee/Controllers/EmployeeBio.php(65): App\Libraries\UploadFile->multiple_upload()
+ 4 SYSTEMPATH/CodeIgniter.php(927): Modules\Employee\Controllers\EmployeeBio->update()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-11 17:15:36 --> The original file is not a valid file.
+in SYSTEMPATH/HTTP/Files/UploadedFile.php on line 137.
+ 1 SYSTEMPATH/HTTP/Files/UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+ 2 APPPATH/Libraries/UploadFile.php(86): CodeIgniter\HTTP\Files\UploadedFile->move()
+ 3 ROOTPATH/Modules/Employee/Controllers/EmployeeBio.php(65): App\Libraries\UploadFile->multiple_upload()
+ 4 SYSTEMPATH/CodeIgniter.php(927): Modules\Employee\Controllers\EmployeeBio->update()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-11 17:16:11 --> The original file is not a valid file.
+in SYSTEMPATH/HTTP/Files/UploadedFile.php on line 137.
+ 1 SYSTEMPATH/HTTP/Files/UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+ 2 APPPATH/Libraries/UploadFile.php(86): CodeIgniter\HTTP\Files\UploadedFile->move()
+ 3 ROOTPATH/Modules/Employee/Controllers/EmployeeBio.php(65): App\Libraries\UploadFile->multiple_upload()
+ 4 SYSTEMPATH/CodeIgniter.php(927): Modules\Employee\Controllers\EmployeeBio->update()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-11 17:36:45 --> Undefined array key "files"
+in ROOTPATH/Modules/Employee/Controllers/EmployeeBio.php on line 67.
+ 1 ROOTPATH/Modules/Employee/Controllers/EmployeeBio.php(67): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(927): Modules\Employee\Controllers\EmployeeBio->update()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-11 17:52:24 --> Array to string conversion
+in ROOTPATH/Modules/Employee/Views/bio.php on line 14.
+ 1 ROOTPATH/Modules/Employee/Views/bio.php(14): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('ROOTPATH/Modules/Employee/Views/bio.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render()
+ 5 ROOTPATH/Modules/Employee/Controllers/EmployeeBio.php(37): view()
+ 6 SYSTEMPATH/CodeIgniter.php(927): Modules\Employee\Controllers\EmployeeBio->index()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-11 17:59:07 --> No file was uploaded.(4)
+in APPPATH/Libraries/UploadFile.php on line 58.
+ 1 ROOTPATH/Modules/Employee/Controllers/EmployeeBio.php(66): App\Libraries\UploadFile->multiple_upload()
+ 2 SYSTEMPATH/CodeIgniter.php(927): Modules\Employee\Controllers\EmployeeBio->update()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-11 18:02:50 --> Too few arguments to function CodeIgniter\HTTP\IncomingRequest::getFileMultiple(), 0 passed in /var/www/html/ci4.ombagoes.com/app/Libraries/UploadFile.php on line 55 and exactly 1 expected
+in SYSTEMPATH/HTTP/IncomingRequest.php on line 735.
+ 1 APPPATH/Libraries/UploadFile.php(55): CodeIgniter\HTTP\IncomingRequest->getFileMultiple()
+ 2 ROOTPATH/Modules/Employee/Controllers/EmployeeBio.php(66): App\Libraries\UploadFile->multiple_upload()
+ 3 SYSTEMPATH/CodeIgniter.php(927): Modules\Employee\Controllers\EmployeeBio->update()
+ 4 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-11 18:03:38 --> Call to a member function hasMoved() on null
+in APPPATH/Libraries/UploadFile.php on line 61.
+ 1 ROOTPATH/Modules/Employee/Controllers/EmployeeBio.php(66): App\Libraries\UploadFile->multiple_upload()
+ 2 SYSTEMPATH/CodeIgniter.php(927): Modules\Employee\Controllers\EmployeeBio->update()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

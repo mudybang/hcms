@@ -1,0 +1,407 @@
+CRITICAL - 2022-12-06 01:33:20 --> Class "Master\Education\Models\MEducation" not found
+in ROOTPATH/Master/Education/Controllers/Education.php on line 20.
+ 1 SYSTEMPATH/CodeIgniter.php(889): Master\Education\Controllers\Education->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-06 15:47:54 --> Undefined variable $perm
+in ROOTPATH/Modules/Perm/Views/dataview.php on line 69.
+ 1 ROOTPATH/Modules/Perm/Views/dataview.php(69): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('ROOTPATH/Modules/Perm/Views/dataview.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render()
+ 5 ROOTPATH/Modules/Perm/Controllers/PermController.php(24): view()
+ 6 SYSTEMPATH/CodeIgniter.php(927): Modules\Perm\Controllers\PermController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-06 15:50:08 --> Undefined property: Modules\Perm\Controllers\PermController::$perm
+in ROOTPATH/Modules/Perm/Controllers/PermController.php on line 17.
+ 1 ROOTPATH/Modules/Perm/Controllers/PermController.php(17): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(889): Modules\Perm\Controllers\PermController->__construct()
+ 3 SYSTEMPATH/CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-06 21:57:40 --> Undefined variable $db
+in APPPATH/Views/partials/sidebar.php on line 5.
+ 1 APPPATH/Views/partials/sidebar.php(5): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/partials/sidebar.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render()
+ 5 APPPATH/Views/dashboard.php(55): view()
+ 6 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/dashboard.php')
+ 7 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render()
+ 9 APPPATH/Controllers/Home.php(9): view()
+10 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->index()
+11 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+12 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+13 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-06 21:59:42 --> Undefined variable $parent
+in APPPATH/Views/dashboard.php on line 70.
+ 1 APPPATH/Views/dashboard.php(70): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/dashboard.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Home.php(16): view()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->index()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-06 23:09:14 --> mysqli_sql_exception: Table 'ci4ombagoescom.branch' doesn't exist in /var/www/html/ci4.ombagoes.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /var/www/html/ci4.ombagoes.com/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /var/www/html/ci4.ombagoes.com/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/ci4.ombagoes.com/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/ci4.ombagoes.com/Master/Project/Controllers/Project.php(49): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/ci4.ombagoes.com/system/CodeIgniter.php(927): Master\Project\Controllers\Project->get_data()
+#5 /var/www/html/ci4.ombagoes.com/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+#6 /var/www/html/ci4.ombagoes.com/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+#7 /var/www/html/ci4.ombagoes.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-12-06 23:09:14 --> Table 'ci4ombagoescom.branch' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 ROOTPATH/Master/Project/Controllers/Project.php(49): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/CodeIgniter.php(927): Master\Project\Controllers\Project->get_data()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-06 23:10:04 --> mysqli_sql_exception: Table 'ci4ombagoescom.branch' doesn't exist in /var/www/html/ci4.ombagoes.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /var/www/html/ci4.ombagoes.com/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /var/www/html/ci4.ombagoes.com/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/ci4.ombagoes.com/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/ci4.ombagoes.com/Master/Project/Controllers/Project.php(49): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/ci4.ombagoes.com/system/CodeIgniter.php(927): Master\Project\Controllers\Project->get_data()
+#5 /var/www/html/ci4.ombagoes.com/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+#6 /var/www/html/ci4.ombagoes.com/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+#7 /var/www/html/ci4.ombagoes.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-12-06 23:10:04 --> Table 'ci4ombagoescom.branch' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 ROOTPATH/Master/Project/Controllers/Project.php(49): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/CodeIgniter.php(927): Master\Project\Controllers\Project->get_data()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-06 23:10:23 --> mysqli_sql_exception: Table 'ci4ombagoescom.branch' doesn't exist in /var/www/html/ci4.ombagoes.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /var/www/html/ci4.ombagoes.com/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /var/www/html/ci4.ombagoes.com/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/ci4.ombagoes.com/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/ci4.ombagoes.com/Master/Project/Controllers/Project.php(49): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/ci4.ombagoes.com/system/CodeIgniter.php(927): Master\Project\Controllers\Project->get_data()
+#5 /var/www/html/ci4.ombagoes.com/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+#6 /var/www/html/ci4.ombagoes.com/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+#7 /var/www/html/ci4.ombagoes.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-12-06 23:10:23 --> Table 'ci4ombagoescom.branch' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 ROOTPATH/Master/Project/Controllers/Project.php(49): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/CodeIgniter.php(927): Master\Project\Controllers\Project->get_data()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-06 23:10:55 --> mysqli_sql_exception: Table 'ci4ombagoescom.branch' doesn't exist in /var/www/html/ci4.ombagoes.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /var/www/html/ci4.ombagoes.com/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /var/www/html/ci4.ombagoes.com/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/ci4.ombagoes.com/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/ci4.ombagoes.com/Master/Project/Controllers/Project.php(49): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/ci4.ombagoes.com/system/CodeIgniter.php(927): Master\Project\Controllers\Project->get_data()
+#5 /var/www/html/ci4.ombagoes.com/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+#6 /var/www/html/ci4.ombagoes.com/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+#7 /var/www/html/ci4.ombagoes.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-12-06 23:10:55 --> Table 'ci4ombagoescom.branch' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 ROOTPATH/Master/Project/Controllers/Project.php(49): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/CodeIgniter.php(927): Master\Project\Controllers\Project->get_data()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-06 23:15:54 --> Call to undefined function easyui_branch()
+in ROOTPATH/Master/Project/Views/dataview.php on line 36.
+ 1 SYSTEMPATH/View/View.php(213): include()
+ 2 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render()
+ 4 ROOTPATH/Master/Project/Controllers/Project.php(30): view()
+ 5 SYSTEMPATH/CodeIgniter.php(927): Master\Project\Controllers\Project->index()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-06 23:17:06 --> mysqli_sql_exception: Unknown column 'active' in 'where clause' in /var/www/html/ci4.ombagoes.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /var/www/html/ci4.ombagoes.com/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /var/www/html/ci4.ombagoes.com/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/ci4.ombagoes.com/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/ci4.ombagoes.com/system/Database/BaseBuilder.php(1718): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/ci4.ombagoes.com/app/Helpers/MY_combobox_helper.php(114): CodeIgniter\Database\BaseBuilder->getWhere()
+#5 /var/www/html/ci4.ombagoes.com/Master/Project/Views/dataview.php(36): easyui_branch()
+#6 /var/www/html/ci4.ombagoes.com/system/View/View.php(213): include('...')
+#7 /var/www/html/ci4.ombagoes.com/system/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#8 /var/www/html/ci4.ombagoes.com/system/Common.php(1134): CodeIgniter\View\View->render()
+#9 /var/www/html/ci4.ombagoes.com/Master/Project/Controllers/Project.php(30): view()
+#10 /var/www/html/ci4.ombagoes.com/system/CodeIgniter.php(927): Master\Project\Controllers\Project->index()
+#11 /var/www/html/ci4.ombagoes.com/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+#12 /var/www/html/ci4.ombagoes.com/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+#13 /var/www/html/ci4.ombagoes.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2022-12-06 23:17:06 --> Unknown column 'active' in 'where clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1718): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH/Helpers/MY_combobox_helper.php(114): CodeIgniter\Database\BaseBuilder->getWhere()
+ 6 ROOTPATH/Master/Project/Views/dataview.php(36): easyui_branch()
+ 7 SYSTEMPATH/View/View.php(213): include('ROOTPATH/Master/Project/Views/dataview.php')
+ 8 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render()
+10 ROOTPATH/Master/Project/Controllers/Project.php(30): view()
+11 SYSTEMPATH/CodeIgniter.php(927): Master\Project\Controllers\Project->index()
+12 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+13 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+14 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-06 23:17:51 --> mysqli_sql_exception: Table 'ci4ombagoescom.branch' doesn't exist in /var/www/html/ci4.ombagoes.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /var/www/html/ci4.ombagoes.com/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /var/www/html/ci4.ombagoes.com/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/ci4.ombagoes.com/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/ci4.ombagoes.com/Master/Project/Controllers/Project.php(49): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/ci4.ombagoes.com/system/CodeIgniter.php(927): Master\Project\Controllers\Project->get_data()
+#5 /var/www/html/ci4.ombagoes.com/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+#6 /var/www/html/ci4.ombagoes.com/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+#7 /var/www/html/ci4.ombagoes.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-12-06 23:17:51 --> Table 'ci4ombagoescom.branch' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 ROOTPATH/Master/Project/Controllers/Project.php(49): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/CodeIgniter.php(927): Master\Project\Controllers\Project->get_data()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-06 23:20:11 --> mysqli_sql_exception: Table 'ci4ombagoescom.branch' doesn't exist in /var/www/html/ci4.ombagoes.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /var/www/html/ci4.ombagoes.com/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /var/www/html/ci4.ombagoes.com/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/ci4.ombagoes.com/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/ci4.ombagoes.com/Master/Project/Controllers/Project.php(49): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/ci4.ombagoes.com/system/CodeIgniter.php(927): Master\Project\Controllers\Project->get_data()
+#5 /var/www/html/ci4.ombagoes.com/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+#6 /var/www/html/ci4.ombagoes.com/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+#7 /var/www/html/ci4.ombagoes.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-12-06 23:20:11 --> Table 'ci4ombagoescom.branch' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 ROOTPATH/Master/Project/Controllers/Project.php(49): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/CodeIgniter.php(927): Master\Project\Controllers\Project->get_data()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-06 23:20:36 --> mysqli_sql_exception: Table 'ci4ombagoescom.branch' doesn't exist in /var/www/html/ci4.ombagoes.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /var/www/html/ci4.ombagoes.com/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /var/www/html/ci4.ombagoes.com/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/ci4.ombagoes.com/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/ci4.ombagoes.com/Master/Project/Controllers/Project.php(49): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/ci4.ombagoes.com/system/CodeIgniter.php(927): Master\Project\Controllers\Project->get_data()
+#5 /var/www/html/ci4.ombagoes.com/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+#6 /var/www/html/ci4.ombagoes.com/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+#7 /var/www/html/ci4.ombagoes.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-12-06 23:20:36 --> Table 'ci4ombagoescom.branch' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 ROOTPATH/Master/Project/Controllers/Project.php(49): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/CodeIgniter.php(927): Master\Project\Controllers\Project->get_data()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-06 23:20:49 --> mysqli_sql_exception: Table 'ci4ombagoescom.branch' doesn't exist in /var/www/html/ci4.ombagoes.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /var/www/html/ci4.ombagoes.com/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /var/www/html/ci4.ombagoes.com/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/ci4.ombagoes.com/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/ci4.ombagoes.com/Master/Project/Controllers/Project.php(49): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/ci4.ombagoes.com/system/CodeIgniter.php(927): Master\Project\Controllers\Project->get_data()
+#5 /var/www/html/ci4.ombagoes.com/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+#6 /var/www/html/ci4.ombagoes.com/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+#7 /var/www/html/ci4.ombagoes.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-12-06 23:20:49 --> Table 'ci4ombagoescom.branch' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 ROOTPATH/Master/Project/Controllers/Project.php(49): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/CodeIgniter.php(927): Master\Project\Controllers\Project->get_data()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-06 23:21:12 --> mysqli_sql_exception: Unknown column 'limit_distances' in 'field list' in /var/www/html/ci4.ombagoes.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /var/www/html/ci4.ombagoes.com/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /var/www/html/ci4.ombagoes.com/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/ci4.ombagoes.com/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/ci4.ombagoes.com/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/ci4.ombagoes.com/system/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 /var/www/html/ci4.ombagoes.com/system/BaseModel.php(749): CodeIgniter\Model->doInsert()
+#6 /var/www/html/ci4.ombagoes.com/system/Model.php(667): CodeIgniter\BaseModel->insert()
+#7 /var/www/html/ci4.ombagoes.com/system/BaseModel.php(659): CodeIgniter\Model->insert()
+#8 /var/www/html/ci4.ombagoes.com/Master/Project/Controllers/Project.php(73): CodeIgniter\BaseModel->save()
+#9 /var/www/html/ci4.ombagoes.com/system/CodeIgniter.php(927): Master\Project\Controllers\Project->create()
+#10 /var/www/html/ci4.ombagoes.com/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+#11 /var/www/html/ci4.ombagoes.com/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+#12 /var/www/html/ci4.ombagoes.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2022-12-06 23:21:12 --> Unknown column 'limit_distances' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH/BaseModel.php(749): CodeIgniter\Model->doInsert()
+ 7 SYSTEMPATH/Model.php(667): CodeIgniter\BaseModel->insert()
+ 8 SYSTEMPATH/BaseModel.php(659): CodeIgniter\Model->insert()
+ 9 ROOTPATH/Master/Project/Controllers/Project.php(73): CodeIgniter\BaseModel->save()
+10 SYSTEMPATH/CodeIgniter.php(927): Master\Project\Controllers\Project->create()
+11 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+12 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+13 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-06 23:21:18 --> mysqli_sql_exception: Unknown column 'limit_distances' in 'field list' in /var/www/html/ci4.ombagoes.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /var/www/html/ci4.ombagoes.com/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /var/www/html/ci4.ombagoes.com/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/ci4.ombagoes.com/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/ci4.ombagoes.com/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/ci4.ombagoes.com/system/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 /var/www/html/ci4.ombagoes.com/system/BaseModel.php(749): CodeIgniter\Model->doInsert()
+#6 /var/www/html/ci4.ombagoes.com/system/Model.php(667): CodeIgniter\BaseModel->insert()
+#7 /var/www/html/ci4.ombagoes.com/system/BaseModel.php(659): CodeIgniter\Model->insert()
+#8 /var/www/html/ci4.ombagoes.com/Master/Project/Controllers/Project.php(73): CodeIgniter\BaseModel->save()
+#9 /var/www/html/ci4.ombagoes.com/system/CodeIgniter.php(927): Master\Project\Controllers\Project->create()
+#10 /var/www/html/ci4.ombagoes.com/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+#11 /var/www/html/ci4.ombagoes.com/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+#12 /var/www/html/ci4.ombagoes.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2022-12-06 23:21:18 --> Unknown column 'limit_distances' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH/BaseModel.php(749): CodeIgniter\Model->doInsert()
+ 7 SYSTEMPATH/Model.php(667): CodeIgniter\BaseModel->insert()
+ 8 SYSTEMPATH/BaseModel.php(659): CodeIgniter\Model->insert()
+ 9 ROOTPATH/Master/Project/Controllers/Project.php(73): CodeIgniter\BaseModel->save()
+10 SYSTEMPATH/CodeIgniter.php(927): Master\Project\Controllers\Project->create()
+11 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+12 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+13 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-06 23:22:26 --> mysqli_sql_exception: Table 'ci4ombagoescom.branch' doesn't exist in /var/www/html/ci4.ombagoes.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /var/www/html/ci4.ombagoes.com/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /var/www/html/ci4.ombagoes.com/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/ci4.ombagoes.com/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/ci4.ombagoes.com/Master/Project/Controllers/Project.php(49): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/ci4.ombagoes.com/system/CodeIgniter.php(927): Master\Project\Controllers\Project->get_data()
+#5 /var/www/html/ci4.ombagoes.com/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+#6 /var/www/html/ci4.ombagoes.com/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+#7 /var/www/html/ci4.ombagoes.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-12-06 23:22:26 --> Table 'ci4ombagoescom.branch' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 ROOTPATH/Master/Project/Controllers/Project.php(49): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/CodeIgniter.php(927): Master\Project\Controllers\Project->get_data()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-06 23:32:11 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 11 in /var/www/html/ci4.ombagoes.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /var/www/html/ci4.ombagoes.com/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /var/www/html/ci4.ombagoes.com/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/ci4.ombagoes.com/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/ci4.ombagoes.com/Modules/Employee/Controllers/Employee.php(59): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/ci4.ombagoes.com/system/CodeIgniter.php(927): Modules\Employee\Controllers\Employee->get_data()
+#5 /var/www/html/ci4.ombagoes.com/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+#6 /var/www/html/ci4.ombagoes.com/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+#7 /var/www/html/ci4.ombagoes.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-12-06 23:32:11 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 11
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 ROOTPATH/Modules/Employee/Controllers/Employee.php(59): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/CodeIgniter.php(927): Modules\Employee\Controllers\Employee->get_data()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-06 23:32:37 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 11 in /var/www/html/ci4.ombagoes.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /var/www/html/ci4.ombagoes.com/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /var/www/html/ci4.ombagoes.com/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/ci4.ombagoes.com/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/ci4.ombagoes.com/Modules/Employee/Controllers/Employee.php(59): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/ci4.ombagoes.com/system/CodeIgniter.php(927): Modules\Employee\Controllers\Employee->get_data()
+#5 /var/www/html/ci4.ombagoes.com/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+#6 /var/www/html/ci4.ombagoes.com/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+#7 /var/www/html/ci4.ombagoes.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-12-06 23:32:37 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 11
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 ROOTPATH/Modules/Employee/Controllers/Employee.php(59): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/CodeIgniter.php(927): Modules\Employee\Controllers\Employee->get_data()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-06 23:51:39 --> mysqli_sql_exception: Table 'ci4ombagoescom.employement_statuses' doesn't exist in /var/www/html/ci4.ombagoes.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /var/www/html/ci4.ombagoes.com/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /var/www/html/ci4.ombagoes.com/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/ci4.ombagoes.com/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/ci4.ombagoes.com/Modules/Employee/Controllers/Employee.php(58): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/ci4.ombagoes.com/system/CodeIgniter.php(927): Modules\Employee\Controllers\Employee->get_data()
+#5 /var/www/html/ci4.ombagoes.com/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+#6 /var/www/html/ci4.ombagoes.com/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+#7 /var/www/html/ci4.ombagoes.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-12-06 23:51:39 --> Table 'ci4ombagoescom.employement_statuses' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 ROOTPATH/Modules/Employee/Controllers/Employee.php(58): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/CodeIgniter.php(927): Modules\Employee\Controllers\Employee->get_data()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

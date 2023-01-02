@@ -1,0 +1,44 @@
+.sidenav-m3 .icon {
+    width: 18px;
+    height: 18px;
+    font-size: 18px;
+    line-height: 18px;
+}
+.sidenav-m3 a {
+    font-size:12px;
+}
+.table th, .table td{
+    font-size:12px;
+}
+.fitem span.spinner{
+    height: 30px !important;
+}
+.calendar-title {
+    margin-top:-15px;
+    position: absolute;
+    margin-left: 25%;
+    color: #808080;
+}
+.calendar-body td {
+    text-align: center;
+    height: 20px;
+    vertical-align: middle;
+}
+section.content .search-box{
+    margin-bottom: 3px;
+}
+section.content .search-box span{
+    display: inline-block;
+}
+section.content .search-box hr{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.fitem label {
+    display: inline-block;
+    width: 120px;
+    font-weight: normal !important;
+}
+.text-xm{
+    font-size: 12px;
+}

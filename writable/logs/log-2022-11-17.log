@@ -1,0 +1,122 @@
+CRITICAL - 2022-11-17 00:11:16 --> Undefined variable $db
+in APPPATH/Controllers/Home.php on line 17.
+ 1 APPPATH/Controllers/Home.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $db', 'APPPATH/Controllers/Home.php', 17)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->testdb()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-17 00:12:00 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /var/www/html/system/Database/MySQLi/Connection.php:171
+Stack trace:
+#0 /var/www/html/system/Database/MySQLi/Connection.php(171): mysqli->real_connect('localhost', 'bagoes', '336699!', 'appdb', 3306, '', 0)
+#1 /var/www/html/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /var/www/html/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 /var/www/html/app/Controllers/Home.php(18): CodeIgniter\Database\BaseConnection->query('SELECT * FROM r...')
+#4 /var/www/html/system/CodeIgniter.php(927): App\Controllers\Home->testdb()
+#5 /var/www/html/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 /var/www/html/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /var/www/html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /var/www/html/system/Database/MySQLi/Connection.php:215
+Stack trace:
+#0 /var/www/html/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /var/www/html/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 /var/www/html/app/Controllers/Home.php(18): CodeIgniter\Database\BaseConnection->query('SELECT * FROM r...')
+#3 /var/www/html/system/CodeIgniter.php(927): App\Controllers\Home->testdb()
+#4 /var/www/html/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 /var/www/html/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /var/www/html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-11-17 00:12:00 --> Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH/Controllers/Home.php(18): CodeIgniter\Database\BaseConnection->query('SELECT * FROM roles')
+ 3 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->testdb()
+ 4 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-17 00:35:05 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /var/www/html/system/Database/MySQLi/Connection.php:171
+Stack trace:
+#0 /var/www/html/system/Database/MySQLi/Connection.php(171): mysqli->real_connect('localhost', 'bagoes', '336699!', 'appdb', 3306, '', 0)
+#1 /var/www/html/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /var/www/html/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 /var/www/html/app/Controllers/Home.php(18): CodeIgniter\Database\BaseConnection->query('SELECT * FROM r...')
+#4 /var/www/html/system/CodeIgniter.php(927): App\Controllers\Home->testdb()
+#5 /var/www/html/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 /var/www/html/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /var/www/html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /var/www/html/system/Database/MySQLi/Connection.php:215
+Stack trace:
+#0 /var/www/html/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /var/www/html/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 /var/www/html/app/Controllers/Home.php(18): CodeIgniter\Database\BaseConnection->query('SELECT * FROM r...')
+#3 /var/www/html/system/CodeIgniter.php(927): App\Controllers\Home->testdb()
+#4 /var/www/html/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 /var/www/html/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /var/www/html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-11-17 00:35:05 --> Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH/Controllers/Home.php(18): CodeIgniter\Database\BaseConnection->query('SELECT * FROM roles')
+ 3 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->testdb()
+ 4 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-17 01:47:38 --> Object of class CodeIgniter\Shield\Entities\User could not be converted to string
+in APPPATH/Views/welcome_message.php on line 200.
+ 1 SYSTEMPATH/View/View.php(213): include()
+ 2 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('welcome_message', [], true)
+ 4 APPPATH/Controllers/Home.php(10): view('welcome_message', [...])
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->index()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-17 10:10:57 --> Cannot declare class App\Database\Seeds\Role because the name is already in use
+in APPPATH/Database/Seeds/Role.php on line 9.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+ERROR - 2022-11-17 10:15:49 --> mysqli_sql_exception: Table 'appdb.roles' doesn't exist in /var/www/html/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /var/www/html/system/Database/MySQLi/Connection.php(292): mysqli->query('INSERT INTO `ro...', 0)
+#1 /var/www/html/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ro...')
+#2 /var/www/html/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ro...')
+#3 /var/www/html/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ro...', Array, false)
+#4 /var/www/html/system/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 /var/www/html/system/BaseModel.php(749): CodeIgniter\Model->doInsert(Array)
+#6 /var/www/html/system/Model.php(667): CodeIgniter\BaseModel->insert(Array, false)
+#7 /var/www/html/system/BaseModel.php(659): CodeIgniter\Model->insert(Array, false)
+#8 /var/www/html/app/Database/Seeds/RoleSeeder.php(22): CodeIgniter\BaseModel->save(Array)
+#9 /var/www/html/system/Database/Seeder.php(146): App\Database\Seeds\RoleSeeder->run()
+#10 /var/www/html/system/Commands/Database/Seed.php(77): CodeIgniter\Database\Seeder->call('App\\Database\\Se...')
+#11 /var/www/html/system/CLI/Commands.php(63): CodeIgniter\Commands\Database\Seed->run(Array)
+#12 /var/www/html/system/CLI/CommandRunner.php(65): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#13 /var/www/html/system/CLI/CommandRunner.php(51): CodeIgniter\CLI\CommandRunner->index(Array)
+#14 /var/www/html/system/CodeIgniter.php(920): CodeIgniter\CLI\CommandRunner->_remap('index', Array)
+#15 /var/www/html/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(CodeIgniter\CLI\CommandRunner))
+#16 /var/www/html/system/CodeIgniter.php(347): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#17 /var/www/html/system/CLI/Console.php(48): CodeIgniter\CodeIgniter->run()
+#18 /var/www/html/spark(98): CodeIgniter\CLI\Console->run()
+#19 {main}
+CRITICAL - 2022-11-17 10:22:00 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::countAllResults()
+in APPPATH/Controllers/Role.php on line 21.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Role->get_data()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Role))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-17 10:22:24 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::countAllResults()
+in APPPATH/Controllers/Role.php on line 21.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Role->get_data()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Role))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-17 10:24:32 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::countAll()
+in APPPATH/Controllers/Role.php on line 21.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Role->get_data()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Role))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

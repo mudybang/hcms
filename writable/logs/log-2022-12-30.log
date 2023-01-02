@@ -1,0 +1,313 @@
+ERROR - 2022-12-30 15:10:01 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /var/www/html/system/Database/MySQLi/Connection.php:171
+Stack trace:
+#0 /var/www/html/system/Database/MySQLi/Connection.php(171): mysqli->real_connect('localhost', 'bagoes', '336699!', 'ci4ombagoescom', 3306, '', 0)
+#1 /var/www/html/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /var/www/html/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 /var/www/html/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /var/www/html/vendor/codeigniter4/settings/src/Handlers/DatabaseHandler.php(163): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/html/vendor/codeigniter4/settings/src/Handlers/DatabaseHandler.php(41): CodeIgniter\Settings\Handlers\DatabaseHandler->hydrate(NULL)
+#6 /var/www/html/vendor/codeigniter4/settings/src/Settings.php(59): CodeIgniter\Settings\Handlers\DatabaseHandler->has('Config\\Auth', 'sessionConfig', NULL)
+#7 /var/www/html/vendor/codeigniter4/settings/src/Helpers/setting_helper.php(21): CodeIgniter\Settings\Settings->get('Auth.sessionCon...')
+#8 /var/www/html/vendor/codeigniter4/shield/src/Authentication/Authenticators/Session.php(643): setting('Auth.sessionCon...')
+#9 /var/www/html/vendor/codeigniter4/shield/src/Authentication/Authenticators/Session.php(661): CodeIgniter\Shield\Authentication\Authenticators\Session->getSessionUserInfo()
+#10 /var/www/html/vendor/codeigniter4/shield/src/Authentication/Authenticators/Session.php(367): CodeIgniter\Shield\Authentication\Authenticators\Session->getSessionKey('id')
+#11 /var/www/html/vendor/codeigniter4/shield/src/Authentication/Authenticators/Session.php(351): CodeIgniter\Shield\Authentication\Authenticators\Session->checkUserState()
+#12 /var/www/html/vendor/codeigniter4/shield/src/Auth.php(159): CodeIgniter\Shield\Authentication\Authenticators\Session->loggedIn()
+#13 /var/www/html/app/Controllers/Home.php(11): CodeIgniter\Shield\Auth->__call('loggedIn', Array)
+#14 /var/www/html/system/CodeIgniter.php(927): App\Controllers\Home->index()
+#15 /var/www/html/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#16 /var/www/html/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#17 /var/www/html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#18 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /var/www/html/system/Database/MySQLi/Connection.php:215
+Stack trace:
+#0 /var/www/html/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /var/www/html/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 /var/www/html/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 /var/www/html/vendor/codeigniter4/settings/src/Handlers/DatabaseHandler.php(163): CodeIgniter\Database\BaseBuilder->get()
+#4 /var/www/html/vendor/codeigniter4/settings/src/Handlers/DatabaseHandler.php(41): CodeIgniter\Settings\Handlers\DatabaseHandler->hydrate(NULL)
+#5 /var/www/html/vendor/codeigniter4/settings/src/Settings.php(59): CodeIgniter\Settings\Handlers\DatabaseHandler->has('Config\\Auth', 'sessionConfig', NULL)
+#6 /var/www/html/vendor/codeigniter4/settings/src/Helpers/setting_helper.php(21): CodeIgniter\Settings\Settings->get('Auth.sessionCon...')
+#7 /var/www/html/vendor/codeigniter4/shield/src/Authentication/Authenticators/Session.php(643): setting('Auth.sessionCon...')
+#8 /var/www/html/vendor/codeigniter4/shield/src/Authentication/Authenticators/Session.php(661): CodeIgniter\Shield\Authentication\Authenticators\Session->getSessionUserInfo()
+#9 /var/www/html/vendor/codeigniter4/shield/src/Authentication/Authenticators/Session.php(367): CodeIgniter\Shield\Authentication\Authenticators\Session->getSessionKey('id')
+#10 /var/www/html/vendor/codeigniter4/shield/src/Authentication/Authenticators/Session.php(351): CodeIgniter\Shield\Authentication\Authenticators\Session->checkUserState()
+#11 /var/www/html/vendor/codeigniter4/shield/src/Auth.php(159): CodeIgniter\Shield\Authentication\Authenticators\Session->loggedIn()
+#12 /var/www/html/app/Controllers/Home.php(11): CodeIgniter\Shield\Auth->__call('loggedIn', Array)
+#13 /var/www/html/system/CodeIgniter.php(927): App\Controllers\Home->index()
+#14 /var/www/html/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#15 /var/www/html/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#16 /var/www/html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#17 {main}
+CRITICAL - 2022-12-30 15:10:01 --> Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `settings`
+WHERE `context` IS NULL', [], false)
+ 3 VENDORPATH/codeigniter4/settings/src/Handlers/DatabaseHandler.php(163): CodeIgniter\Database\BaseBuilder->get()
+ 4 VENDORPATH/codeigniter4/settings/src/Handlers/DatabaseHandler.php(41): CodeIgniter\Settings\Handlers\DatabaseHandler->hydrate(null)
+ 5 VENDORPATH/codeigniter4/settings/src/Settings.php(59): CodeIgniter\Settings\Handlers\DatabaseHandler->has('Config\\Auth', 'sessionConfig', null)
+ 6 VENDORPATH/codeigniter4/settings/src/Helpers/setting_helper.php(21): CodeIgniter\Settings\Settings->get('Auth.sessionConfig')
+ 7 VENDORPATH/codeigniter4/shield/src/Authentication/Authenticators/Session.php(643): setting('Auth.sessionConfig')
+ 8 VENDORPATH/codeigniter4/shield/src/Authentication/Authenticators/Session.php(661): CodeIgniter\Shield\Authentication\Authenticators\Session->getSessionUserInfo()
+ 9 VENDORPATH/codeigniter4/shield/src/Authentication/Authenticators/Session.php(367): CodeIgniter\Shield\Authentication\Authenticators\Session->getSessionKey('id')
+10 VENDORPATH/codeigniter4/shield/src/Authentication/Authenticators/Session.php(351): CodeIgniter\Shield\Authentication\Authenticators\Session->checkUserState()
+11 VENDORPATH/codeigniter4/shield/src/Auth.php(159): CodeIgniter\Shield\Authentication\Authenticators\Session->loggedIn()
+12 APPPATH/Controllers/Home.php(11): CodeIgniter\Shield\Auth->__call('loggedIn', [])
+13 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->index()
+14 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+15 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+16 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-30 15:10:52 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /var/www/html/system/Database/MySQLi/Connection.php:171
+Stack trace:
+#0 /var/www/html/system/Database/MySQLi/Connection.php(171): mysqli->real_connect('localhost', 'bagoes', '336699', 'appdb', 3306, '', 0)
+#1 /var/www/html/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /var/www/html/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 /var/www/html/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /var/www/html/vendor/codeigniter4/settings/src/Handlers/DatabaseHandler.php(163): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/html/vendor/codeigniter4/settings/src/Handlers/DatabaseHandler.php(41): CodeIgniter\Settings\Handlers\DatabaseHandler->hydrate(NULL)
+#6 /var/www/html/vendor/codeigniter4/settings/src/Settings.php(59): CodeIgniter\Settings\Handlers\DatabaseHandler->has('Config\\Auth', 'sessionConfig', NULL)
+#7 /var/www/html/vendor/codeigniter4/settings/src/Helpers/setting_helper.php(21): CodeIgniter\Settings\Settings->get('Auth.sessionCon...')
+#8 /var/www/html/vendor/codeigniter4/shield/src/Authentication/Authenticators/Session.php(643): setting('Auth.sessionCon...')
+#9 /var/www/html/vendor/codeigniter4/shield/src/Authentication/Authenticators/Session.php(661): CodeIgniter\Shield\Authentication\Authenticators\Session->getSessionUserInfo()
+#10 /var/www/html/vendor/codeigniter4/shield/src/Authentication/Authenticators/Session.php(367): CodeIgniter\Shield\Authentication\Authenticators\Session->getSessionKey('id')
+#11 /var/www/html/vendor/codeigniter4/shield/src/Authentication/Authenticators/Session.php(351): CodeIgniter\Shield\Authentication\Authenticators\Session->checkUserState()
+#12 /var/www/html/vendor/codeigniter4/shield/src/Auth.php(159): CodeIgniter\Shield\Authentication\Authenticators\Session->loggedIn()
+#13 /var/www/html/app/Controllers/Home.php(11): CodeIgniter\Shield\Auth->__call('loggedIn', Array)
+#14 /var/www/html/system/CodeIgniter.php(927): App\Controllers\Home->index()
+#15 /var/www/html/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#16 /var/www/html/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#17 /var/www/html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#18 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /var/www/html/system/Database/MySQLi/Connection.php:215
+Stack trace:
+#0 /var/www/html/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /var/www/html/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 /var/www/html/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 /var/www/html/vendor/codeigniter4/settings/src/Handlers/DatabaseHandler.php(163): CodeIgniter\Database\BaseBuilder->get()
+#4 /var/www/html/vendor/codeigniter4/settings/src/Handlers/DatabaseHandler.php(41): CodeIgniter\Settings\Handlers\DatabaseHandler->hydrate(NULL)
+#5 /var/www/html/vendor/codeigniter4/settings/src/Settings.php(59): CodeIgniter\Settings\Handlers\DatabaseHandler->has('Config\\Auth', 'sessionConfig', NULL)
+#6 /var/www/html/vendor/codeigniter4/settings/src/Helpers/setting_helper.php(21): CodeIgniter\Settings\Settings->get('Auth.sessionCon...')
+#7 /var/www/html/vendor/codeigniter4/shield/src/Authentication/Authenticators/Session.php(643): setting('Auth.sessionCon...')
+#8 /var/www/html/vendor/codeigniter4/shield/src/Authentication/Authenticators/Session.php(661): CodeIgniter\Shield\Authentication\Authenticators\Session->getSessionUserInfo()
+#9 /var/www/html/vendor/codeigniter4/shield/src/Authentication/Authenticators/Session.php(367): CodeIgniter\Shield\Authentication\Authenticators\Session->getSessionKey('id')
+#10 /var/www/html/vendor/codeigniter4/shield/src/Authentication/Authenticators/Session.php(351): CodeIgniter\Shield\Authentication\Authenticators\Session->checkUserState()
+#11 /var/www/html/vendor/codeigniter4/shield/src/Auth.php(159): CodeIgniter\Shield\Authentication\Authenticators\Session->loggedIn()
+#12 /var/www/html/app/Controllers/Home.php(11): CodeIgniter\Shield\Auth->__call('loggedIn', Array)
+#13 /var/www/html/system/CodeIgniter.php(927): App\Controllers\Home->index()
+#14 /var/www/html/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#15 /var/www/html/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#16 /var/www/html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#17 {main}
+CRITICAL - 2022-12-30 15:10:52 --> Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `settings`
+WHERE `context` IS NULL', [], false)
+ 3 VENDORPATH/codeigniter4/settings/src/Handlers/DatabaseHandler.php(163): CodeIgniter\Database\BaseBuilder->get()
+ 4 VENDORPATH/codeigniter4/settings/src/Handlers/DatabaseHandler.php(41): CodeIgniter\Settings\Handlers\DatabaseHandler->hydrate(null)
+ 5 VENDORPATH/codeigniter4/settings/src/Settings.php(59): CodeIgniter\Settings\Handlers\DatabaseHandler->has('Config\\Auth', 'sessionConfig', null)
+ 6 VENDORPATH/codeigniter4/settings/src/Helpers/setting_helper.php(21): CodeIgniter\Settings\Settings->get('Auth.sessionConfig')
+ 7 VENDORPATH/codeigniter4/shield/src/Authentication/Authenticators/Session.php(643): setting('Auth.sessionConfig')
+ 8 VENDORPATH/codeigniter4/shield/src/Authentication/Authenticators/Session.php(661): CodeIgniter\Shield\Authentication\Authenticators\Session->getSessionUserInfo()
+ 9 VENDORPATH/codeigniter4/shield/src/Authentication/Authenticators/Session.php(367): CodeIgniter\Shield\Authentication\Authenticators\Session->getSessionKey('id')
+10 VENDORPATH/codeigniter4/shield/src/Authentication/Authenticators/Session.php(351): CodeIgniter\Shield\Authentication\Authenticators\Session->checkUserState()
+11 VENDORPATH/codeigniter4/shield/src/Auth.php(159): CodeIgniter\Shield\Authentication\Authenticators\Session->loggedIn()
+12 APPPATH/Controllers/Home.php(11): CodeIgniter\Shield\Auth->__call('loggedIn', [])
+13 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->index()
+14 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+15 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+16 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-30 15:15:15 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /var/www/html/system/Database/MySQLi/Connection.php:171
+Stack trace:
+#0 /var/www/html/system/Database/MySQLi/Connection.php(171): mysqli->real_connect('localhost', 'bagoes', '336699', 'appdb', 3306, '', 0)
+#1 /var/www/html/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /var/www/html/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 /var/www/html/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /var/www/html/vendor/codeigniter4/settings/src/Handlers/DatabaseHandler.php(163): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/html/vendor/codeigniter4/settings/src/Handlers/DatabaseHandler.php(41): CodeIgniter\Settings\Handlers\DatabaseHandler->hydrate(NULL)
+#6 /var/www/html/vendor/codeigniter4/settings/src/Settings.php(59): CodeIgniter\Settings\Handlers\DatabaseHandler->has('Config\\Auth', 'sessionConfig', NULL)
+#7 /var/www/html/vendor/codeigniter4/settings/src/Helpers/setting_helper.php(21): CodeIgniter\Settings\Settings->get('Auth.sessionCon...')
+#8 /var/www/html/vendor/codeigniter4/shield/src/Authentication/Authenticators/Session.php(643): setting('Auth.sessionCon...')
+#9 /var/www/html/vendor/codeigniter4/shield/src/Authentication/Authenticators/Session.php(661): CodeIgniter\Shield\Authentication\Authenticators\Session->getSessionUserInfo()
+#10 /var/www/html/vendor/codeigniter4/shield/src/Authentication/Authenticators/Session.php(367): CodeIgniter\Shield\Authentication\Authenticators\Session->getSessionKey('id')
+#11 /var/www/html/vendor/codeigniter4/shield/src/Authentication/Authenticators/Session.php(351): CodeIgniter\Shield\Authentication\Authenticators\Session->checkUserState()
+#12 /var/www/html/vendor/codeigniter4/shield/src/Auth.php(159): CodeIgniter\Shield\Authentication\Authenticators\Session->loggedIn()
+#13 /var/www/html/app/Controllers/Home.php(11): CodeIgniter\Shield\Auth->__call('loggedIn', Array)
+#14 /var/www/html/system/CodeIgniter.php(927): App\Controllers\Home->index()
+#15 /var/www/html/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#16 /var/www/html/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#17 /var/www/html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#18 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /var/www/html/system/Database/MySQLi/Connection.php:215
+Stack trace:
+#0 /var/www/html/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /var/www/html/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 /var/www/html/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 /var/www/html/vendor/codeigniter4/settings/src/Handlers/DatabaseHandler.php(163): CodeIgniter\Database\BaseBuilder->get()
+#4 /var/www/html/vendor/codeigniter4/settings/src/Handlers/DatabaseHandler.php(41): CodeIgniter\Settings\Handlers\DatabaseHandler->hydrate(NULL)
+#5 /var/www/html/vendor/codeigniter4/settings/src/Settings.php(59): CodeIgniter\Settings\Handlers\DatabaseHandler->has('Config\\Auth', 'sessionConfig', NULL)
+#6 /var/www/html/vendor/codeigniter4/settings/src/Helpers/setting_helper.php(21): CodeIgniter\Settings\Settings->get('Auth.sessionCon...')
+#7 /var/www/html/vendor/codeigniter4/shield/src/Authentication/Authenticators/Session.php(643): setting('Auth.sessionCon...')
+#8 /var/www/html/vendor/codeigniter4/shield/src/Authentication/Authenticators/Session.php(661): CodeIgniter\Shield\Authentication\Authenticators\Session->getSessionUserInfo()
+#9 /var/www/html/vendor/codeigniter4/shield/src/Authentication/Authenticators/Session.php(367): CodeIgniter\Shield\Authentication\Authenticators\Session->getSessionKey('id')
+#10 /var/www/html/vendor/codeigniter4/shield/src/Authentication/Authenticators/Session.php(351): CodeIgniter\Shield\Authentication\Authenticators\Session->checkUserState()
+#11 /var/www/html/vendor/codeigniter4/shield/src/Auth.php(159): CodeIgniter\Shield\Authentication\Authenticators\Session->loggedIn()
+#12 /var/www/html/app/Controllers/Home.php(11): CodeIgniter\Shield\Auth->__call('loggedIn', Array)
+#13 /var/www/html/system/CodeIgniter.php(927): App\Controllers\Home->index()
+#14 /var/www/html/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#15 /var/www/html/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#16 /var/www/html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#17 {main}
+CRITICAL - 2022-12-30 15:15:16 --> Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `settings`
+WHERE `context` IS NULL', [], false)
+ 3 VENDORPATH/codeigniter4/settings/src/Handlers/DatabaseHandler.php(163): CodeIgniter\Database\BaseBuilder->get()
+ 4 VENDORPATH/codeigniter4/settings/src/Handlers/DatabaseHandler.php(41): CodeIgniter\Settings\Handlers\DatabaseHandler->hydrate(null)
+ 5 VENDORPATH/codeigniter4/settings/src/Settings.php(59): CodeIgniter\Settings\Handlers\DatabaseHandler->has('Config\\Auth', 'sessionConfig', null)
+ 6 VENDORPATH/codeigniter4/settings/src/Helpers/setting_helper.php(21): CodeIgniter\Settings\Settings->get('Auth.sessionConfig')
+ 7 VENDORPATH/codeigniter4/shield/src/Authentication/Authenticators/Session.php(643): setting('Auth.sessionConfig')
+ 8 VENDORPATH/codeigniter4/shield/src/Authentication/Authenticators/Session.php(661): CodeIgniter\Shield\Authentication\Authenticators\Session->getSessionUserInfo()
+ 9 VENDORPATH/codeigniter4/shield/src/Authentication/Authenticators/Session.php(367): CodeIgniter\Shield\Authentication\Authenticators\Session->getSessionKey('id')
+10 VENDORPATH/codeigniter4/shield/src/Authentication/Authenticators/Session.php(351): CodeIgniter\Shield\Authentication\Authenticators\Session->checkUserState()
+11 VENDORPATH/codeigniter4/shield/src/Auth.php(159): CodeIgniter\Shield\Authentication\Authenticators\Session->loggedIn()
+12 APPPATH/Controllers/Home.php(11): CodeIgniter\Shield\Auth->__call('loggedIn', [])
+13 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->index()
+14 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+15 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+16 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-30 17:33:58 --> mysqli_sql_exception: Table 'appdb.settings' doesn't exist in /var/www/html/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /var/www/html/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /var/www/html/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /var/www/html/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /var/www/html/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /var/www/html/vendor/codeigniter4/settings/src/Handlers/DatabaseHandler.php(163): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/html/vendor/codeigniter4/settings/src/Handlers/DatabaseHandler.php(41): CodeIgniter\Settings\Handlers\DatabaseHandler->hydrate(NULL)
+#6 /var/www/html/vendor/codeigniter4/settings/src/Settings.php(59): CodeIgniter\Settings\Handlers\DatabaseHandler->has('Config\\Auth', 'sessionConfig', NULL)
+#7 /var/www/html/vendor/codeigniter4/settings/src/Helpers/setting_helper.php(21): CodeIgniter\Settings\Settings->get('Auth.sessionCon...')
+#8 /var/www/html/vendor/codeigniter4/shield/src/Authentication/Authenticators/Session.php(643): setting('Auth.sessionCon...')
+#9 /var/www/html/vendor/codeigniter4/shield/src/Authentication/Authenticators/Session.php(661): CodeIgniter\Shield\Authentication\Authenticators\Session->getSessionUserInfo()
+#10 /var/www/html/vendor/codeigniter4/shield/src/Authentication/Authenticators/Session.php(367): CodeIgniter\Shield\Authentication\Authenticators\Session->getSessionKey('id')
+#11 /var/www/html/vendor/codeigniter4/shield/src/Authentication/Authenticators/Session.php(351): CodeIgniter\Shield\Authentication\Authenticators\Session->checkUserState()
+#12 /var/www/html/vendor/codeigniter4/shield/src/Auth.php(71): CodeIgniter\Shield\Authentication\Authenticators\Session->loggedIn()
+#13 /var/www/html/app/Libraries/UserPerm.php(11): CodeIgniter\Shield\Auth->user()
+#14 /var/www/html/Auth/User/Controllers/UserController.php(21): App\Libraries\UserPerm->__construct()
+#15 /var/www/html/system/CodeIgniter.php(889): Auth\User\Controllers\UserController->__construct()
+#16 /var/www/html/system/CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+#17 /var/www/html/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#18 /var/www/html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#19 {main}
+CRITICAL - 2022-12-30 17:33:58 --> Table 'appdb.settings' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *
+FROM `settings`
+WHERE `context` IS NULL', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `settings`
+WHERE `context` IS NULL')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `settings`
+WHERE `context` IS NULL')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `settings`
+WHERE `context` IS NULL', [], false)
+ 5 VENDORPATH/codeigniter4/settings/src/Handlers/DatabaseHandler.php(163): CodeIgniter\Database\BaseBuilder->get()
+ 6 VENDORPATH/codeigniter4/settings/src/Handlers/DatabaseHandler.php(41): CodeIgniter\Settings\Handlers\DatabaseHandler->hydrate(null)
+ 7 VENDORPATH/codeigniter4/settings/src/Settings.php(59): CodeIgniter\Settings\Handlers\DatabaseHandler->has('Config\\Auth', 'sessionConfig', null)
+ 8 VENDORPATH/codeigniter4/settings/src/Helpers/setting_helper.php(21): CodeIgniter\Settings\Settings->get('Auth.sessionConfig')
+ 9 VENDORPATH/codeigniter4/shield/src/Authentication/Authenticators/Session.php(643): setting('Auth.sessionConfig')
+10 VENDORPATH/codeigniter4/shield/src/Authentication/Authenticators/Session.php(661): CodeIgniter\Shield\Authentication\Authenticators\Session->getSessionUserInfo()
+11 VENDORPATH/codeigniter4/shield/src/Authentication/Authenticators/Session.php(367): CodeIgniter\Shield\Authentication\Authenticators\Session->getSessionKey('id')
+12 VENDORPATH/codeigniter4/shield/src/Authentication/Authenticators/Session.php(351): CodeIgniter\Shield\Authentication\Authenticators\Session->checkUserState()
+13 VENDORPATH/codeigniter4/shield/src/Auth.php(71): CodeIgniter\Shield\Authentication\Authenticators\Session->loggedIn()
+14 APPPATH/Libraries/UserPerm.php(11): CodeIgniter\Shield\Auth->user()
+15 ROOTPATH/Auth/User/Controllers/UserController.php(21): App\Libraries\UserPerm->__construct()
+16 SYSTEMPATH/CodeIgniter.php(889): Auth\User\Controllers\UserController->__construct()
+17 SYSTEMPATH/CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+18 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+19 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-30 20:06:18 --> chmod(): Operation not permitted
+in SYSTEMPATH/Session/Handlers/FileHandler.php on line 148.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'chmod(): Operation not permitted', 'SYSTEMPATH/Session/Handlers/FileHandler.php', 148)
+ 2 SYSTEMPATH/Session/Handlers/FileHandler.php(148): chmod('ROOTPATH/writable/session/ci_session8639228595fcc77526fe68aa3f5ad6e71b229fa3', 384)
+ 3 [internal function]: CodeIgniter\Session\Handlers\FileHandler->read('8639228595fcc77526fe68aa3f5ad6e71b229fa3')
+ 4 SYSTEMPATH/Session/Session.php(407): session_regenerate_id(false)
+ 5 SYSTEMPATH/Session/Session.php(243): CodeIgniter\Session\Session->regenerate(false)
+ 6 SYSTEMPATH/Config/Services.php(665): CodeIgniter\Session\Session->start()
+ 7 SYSTEMPATH/Config/BaseService.php(253): CodeIgniter\Config\Services::session(Object(Config\App), false)
+ 8 SYSTEMPATH/Config/BaseService.php(194): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+ 9 SYSTEMPATH/Config/Services.php(637): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+10 SYSTEMPATH/Config/BaseService.php(253): CodeIgniter\Config\Services::session()
+11 SYSTEMPATH/Security/Security.php(220): CodeIgniter\Config\BaseService::__callStatic('session', [])
+12 SYSTEMPATH/Security/Security.php(201): CodeIgniter\Security\Security->configureSession()
+13 SYSTEMPATH/Config/Services.php(626): CodeIgniter\Security\Security->__construct(Object(Config\App))
+14 SYSTEMPATH/Config/BaseService.php(253): CodeIgniter\Config\Services::security(Object(Config\App), false)
+15 SYSTEMPATH/Config/BaseService.php(194): CodeIgniter\Config\BaseService::__callStatic('security', [...])
+16 SYSTEMPATH/Config/Services.php(621): CodeIgniter\Config\BaseService::getSharedInstance('security', null)
+17 SYSTEMPATH/Config/BaseService.php(253): CodeIgniter\Config\Services::security()
+18 SYSTEMPATH/Filters/CSRF.php(52): CodeIgniter\Config\BaseService::__callStatic('security', [])
+19 SYSTEMPATH/Filters/Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+20 SYSTEMPATH/CodeIgniter.php(455): CodeIgniter\Filters\Filters->run('user', 'before')
+21 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+22 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-30 21:03:52 --> mysqli_sql_exception: Table 'appdb.settings' doesn't exist in /var/www/html/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /var/www/html/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /var/www/html/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /var/www/html/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /var/www/html/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /var/www/html/vendor/codeigniter4/settings/src/Handlers/DatabaseHandler.php(163): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/html/vendor/codeigniter4/settings/src/Handlers/DatabaseHandler.php(41): CodeIgniter\Settings\Handlers\DatabaseHandler->hydrate(NULL)
+#6 /var/www/html/vendor/codeigniter4/settings/src/Settings.php(59): CodeIgniter\Settings\Handlers\DatabaseHandler->has('Config\\Auth', 'sessionConfig', NULL)
+#7 /var/www/html/vendor/codeigniter4/settings/src/Helpers/setting_helper.php(21): CodeIgniter\Settings\Settings->get('Auth.sessionCon...')
+#8 /var/www/html/vendor/codeigniter4/shield/src/Authentication/Authenticators/Session.php(643): setting('Auth.sessionCon...')
+#9 /var/www/html/vendor/codeigniter4/shield/src/Authentication/Authenticators/Session.php(661): CodeIgniter\Shield\Authentication\Authenticators\Session->getSessionUserInfo()
+#10 /var/www/html/vendor/codeigniter4/shield/src/Authentication/Authenticators/Session.php(367): CodeIgniter\Shield\Authentication\Authenticators\Session->getSessionKey('id')
+#11 /var/www/html/vendor/codeigniter4/shield/src/Authentication/Authenticators/Session.php(351): CodeIgniter\Shield\Authentication\Authenticators\Session->checkUserState()
+#12 /var/www/html/vendor/codeigniter4/shield/src/Auth.php(159): CodeIgniter\Shield\Authentication\Authenticators\Session->loggedIn()
+#13 /var/www/html/app/Controllers/Home.php(11): CodeIgniter\Shield\Auth->__call('loggedIn', Array)
+#14 /var/www/html/system/CodeIgniter.php(927): App\Controllers\Home->index()
+#15 /var/www/html/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#16 /var/www/html/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#17 /var/www/html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#18 {main}
+CRITICAL - 2022-12-30 21:03:52 --> Table 'appdb.settings' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *
+FROM `settings`
+WHERE `context` IS NULL', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `settings`
+WHERE `context` IS NULL')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `settings`
+WHERE `context` IS NULL')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `settings`
+WHERE `context` IS NULL', [], false)
+ 5 VENDORPATH/codeigniter4/settings/src/Handlers/DatabaseHandler.php(163): CodeIgniter\Database\BaseBuilder->get()
+ 6 VENDORPATH/codeigniter4/settings/src/Handlers/DatabaseHandler.php(41): CodeIgniter\Settings\Handlers\DatabaseHandler->hydrate(null)
+ 7 VENDORPATH/codeigniter4/settings/src/Settings.php(59): CodeIgniter\Settings\Handlers\DatabaseHandler->has('Config\\Auth', 'sessionConfig', null)
+ 8 VENDORPATH/codeigniter4/settings/src/Helpers/setting_helper.php(21): CodeIgniter\Settings\Settings->get('Auth.sessionConfig')
+ 9 VENDORPATH/codeigniter4/shield/src/Authentication/Authenticators/Session.php(643): setting('Auth.sessionConfig')
+10 VENDORPATH/codeigniter4/shield/src/Authentication/Authenticators/Session.php(661): CodeIgniter\Shield\Authentication\Authenticators\Session->getSessionUserInfo()
+11 VENDORPATH/codeigniter4/shield/src/Authentication/Authenticators/Session.php(367): CodeIgniter\Shield\Authentication\Authenticators\Session->getSessionKey('id')
+12 VENDORPATH/codeigniter4/shield/src/Authentication/Authenticators/Session.php(351): CodeIgniter\Shield\Authentication\Authenticators\Session->checkUserState()
+13 VENDORPATH/codeigniter4/shield/src/Auth.php(159): CodeIgniter\Shield\Authentication\Authenticators\Session->loggedIn()
+14 APPPATH/Controllers/Home.php(11): CodeIgniter\Shield\Auth->__call('loggedIn', [])
+15 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->index()
+16 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+17 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+18 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

@@ -1,0 +1,814 @@
+CRITICAL - 2022-12-05 00:27:50 --> Call to undefined method CodeIgniter\Router\RouteCollection::branch()
+in ROOTPATH/Master/Branch/Routes.php on line 2.
+ 1 APPPATH/Config/Routes.php(74): require()
+ 2 SYSTEMPATH/CodeIgniter.php(789): require('APPPATH/Config/Routes.php')
+ 3 SYSTEMPATH/CodeIgniter.php(430): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-05 00:53:13 --> Class "Master\Branch\Models\MBranch" not found
+in ROOTPATH/Master/Branch/Controllers/Branch.php on line 19.
+ 1 SYSTEMPATH/CodeIgniter.php(889): Master\Branch\Controllers\Branch->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-05 00:53:36 --> Class "Master\Branch\Models\MBranch" not found
+in ROOTPATH/Master/Branch/Controllers/Branch.php on line 19.
+ 1 SYSTEMPATH/CodeIgniter.php(889): Master\Branch\Controllers\Branch->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-05 00:53:37 --> Class "Master\Branch\Models\MBranch" not found
+in ROOTPATH/Master/Branch/Controllers/Branch.php on line 19.
+ 1 SYSTEMPATH/CodeIgniter.php(889): Master\Branch\Controllers\Branch->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-05 00:53:48 --> Undefined property: App\Libraries\UserPerm::$module_id
+in APPPATH/Libraries/UserPerm.php on line 36.
+ 1 APPPATH/Libraries/UserPerm.php(36): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 ROOTPATH/Master/Branch/Controllers/Branch.php(21): App\Libraries\UserPerm->getModule()
+ 3 SYSTEMPATH/CodeIgniter.php(889): Master\Branch\Controllers\Branch->__construct()
+ 4 SYSTEMPATH/CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 5 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-05 00:56:17 --> Attempt to read property "menu_label" on null
+in ROOTPATH/Master/Branch/Controllers/Branch.php on line 25.
+ 1 ROOTPATH/Master/Branch/Controllers/Branch.php(25): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(927): Master\Branch\Controllers\Branch->index()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-05 00:57:17 --> Attempt to read property "menu_label" on null
+in ROOTPATH/Master/Branch/Controllers/Branch.php on line 25.
+ 1 ROOTPATH/Master/Branch/Controllers/Branch.php(25): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(927): Master\Branch\Controllers\Branch->index()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-05 00:58:15 --> Attempt to read property "menu_label" on array
+in ROOTPATH/Master/Branch/Controllers/Branch.php on line 25.
+ 1 ROOTPATH/Master/Branch/Controllers/Branch.php(25): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(927): Master\Branch\Controllers\Branch->index()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-05 00:58:55 --> Attempt to read property "menu_label" on array
+in ROOTPATH/Master/Branch/Controllers/Branch.php on line 25.
+ 1 ROOTPATH/Master/Branch/Controllers/Branch.php(25): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(927): Master\Branch\Controllers\Branch->index()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-05 00:59:45 --> Attempt to read property "menu_label" on array
+in ROOTPATH/Master/Branch/Controllers/Branch.php on line 25.
+ 1 ROOTPATH/Master/Branch/Controllers/Branch.php(25): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(927): Master\Branch\Controllers\Branch->index()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-05 01:00:27 --> Attempt to read property "id" on array
+in ROOTPATH/Master/Branch/Controllers/Branch.php on line 28.
+ 1 ROOTPATH/Master/Branch/Controllers/Branch.php(28): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(927): Master\Branch\Controllers\Branch->index()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-05 01:00:52 --> Undefined property: Master\Branch\Controllers\Branch::$modules_id
+in ROOTPATH/Master/Branch/Controllers/Branch.php on line 28.
+ 1 ROOTPATH/Master/Branch/Controllers/Branch.php(28): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(927): Master\Branch\Controllers\Branch->index()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-05 01:01:38 --> Invalid file: \Modules\Master\Branch\Views\dataview.php
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render()
+ 3 ROOTPATH/Master/Branch/Controllers/Branch.php(29): view()
+ 4 SYSTEMPATH/CodeIgniter.php(927): Master\Branch\Controllers\Branch->index()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-05 01:01:56 --> Call to undefined function easyui_province()
+in ROOTPATH/Master/Branch/Views/dataview.php on line 58.
+ 1 SYSTEMPATH/View/View.php(213): include()
+ 2 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render()
+ 4 ROOTPATH/Master/Branch/Controllers/Branch.php(29): view()
+ 5 SYSTEMPATH/CodeIgniter.php(927): Master\Branch\Controllers\Branch->index()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-05 01:03:04 --> Call to undefined function easyui_province()
+in ROOTPATH/Master/Branch/Views/dataview.php on line 58.
+ 1 SYSTEMPATH/View/View.php(213): include()
+ 2 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render()
+ 4 ROOTPATH/Master/Branch/Controllers/Branch.php(29): view()
+ 5 SYSTEMPATH/CodeIgniter.php(927): Master\Branch\Controllers\Branch->index()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-05 01:03:07 --> Call to undefined function easyui_province()
+in ROOTPATH/Master/Branch/Views/dataview.php on line 58.
+ 1 SYSTEMPATH/View/View.php(213): include()
+ 2 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render()
+ 4 ROOTPATH/Master/Branch/Controllers/Branch.php(29): view()
+ 5 SYSTEMPATH/CodeIgniter.php(927): Master\Branch\Controllers\Branch->index()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-05 01:03:41 --> Call to undefined function easyui_province()
+in ROOTPATH/Master/Branch/Views/dataview.php on line 58.
+ 1 SYSTEMPATH/View/View.php(213): include()
+ 2 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render()
+ 4 ROOTPATH/Master/Branch/Controllers/Branch.php(29): view()
+ 5 SYSTEMPATH/CodeIgniter.php(927): Master\Branch\Controllers\Branch->index()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-05 01:04:52 --> Call to undefined function easyui_province()
+in ROOTPATH/Master/Branch/Views/dataview.php on line 58.
+ 1 SYSTEMPATH/View/View.php(213): include()
+ 2 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render()
+ 4 ROOTPATH/Master/Branch/Controllers/Branch.php(29): view()
+ 5 SYSTEMPATH/CodeIgniter.php(927): Master\Branch\Controllers\Branch->index()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-05 01:05:21 --> syntax error, unexpected token "<", expecting end of file
+in APPPATH/Helpers/MY_form_helper.php on line 189.
+ 1 SYSTEMPATH/Controller.php(85): helper()
+ 2 APPPATH/Controllers/BaseController.php(48): CodeIgniter\Controller->initController()
+ 3 SYSTEMPATH/CodeIgniter.php(890): App\Controllers\BaseController->initController()
+ 4 SYSTEMPATH/CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 5 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-05 01:05:55 --> Call to undefined function easyui_province()
+in ROOTPATH/Master/Branch/Views/dataview.php on line 58.
+ 1 SYSTEMPATH/View/View.php(213): include()
+ 2 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render()
+ 4 ROOTPATH/Master/Branch/Controllers/Branch.php(29): view()
+ 5 SYSTEMPATH/CodeIgniter.php(927): Master\Branch\Controllers\Branch->index()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-05 01:05:57 --> Call to undefined function easyui_province()
+in ROOTPATH/Master/Branch/Views/dataview.php on line 58.
+ 1 SYSTEMPATH/View/View.php(213): include()
+ 2 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render()
+ 4 ROOTPATH/Master/Branch/Controllers/Branch.php(29): view()
+ 5 SYSTEMPATH/CodeIgniter.php(927): Master\Branch\Controllers\Branch->index()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-05 01:06:26 --> Undefined variable $db
+in APPPATH/Helpers/MY_combobox_helper.php on line 19.
+ 1 APPPATH/Helpers/MY_combobox_helper.php(19): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 ROOTPATH/Master/Branch/Views/dataview.php(58): easyui_province()
+ 3 SYSTEMPATH/View/View.php(213): include('ROOTPATH/Master/Branch/Views/dataview.php')
+ 4 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render()
+ 6 ROOTPATH/Master/Branch/Controllers/Branch.php(29): view()
+ 7 SYSTEMPATH/CodeIgniter.php(927): Master\Branch\Controllers\Branch->index()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-05 01:06:28 --> Undefined variable $db
+in APPPATH/Helpers/MY_combobox_helper.php on line 19.
+ 1 APPPATH/Helpers/MY_combobox_helper.php(19): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 ROOTPATH/Master/Branch/Views/dataview.php(58): easyui_province()
+ 3 SYSTEMPATH/View/View.php(213): include('ROOTPATH/Master/Branch/Views/dataview.php')
+ 4 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render()
+ 6 ROOTPATH/Master/Branch/Controllers/Branch.php(29): view()
+ 7 SYSTEMPATH/CodeIgniter.php(927): Master\Branch\Controllers\Branch->index()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-05 01:32:35 --> mysqli_sql_exception: Unknown column 'limit_distance' in 'field list' in /var/www/html/ci4.ombagoes.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /var/www/html/ci4.ombagoes.com/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /var/www/html/ci4.ombagoes.com/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/ci4.ombagoes.com/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/ci4.ombagoes.com/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/ci4.ombagoes.com/system/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 /var/www/html/ci4.ombagoes.com/system/BaseModel.php(749): CodeIgniter\Model->doInsert()
+#6 /var/www/html/ci4.ombagoes.com/system/Model.php(667): CodeIgniter\BaseModel->insert()
+#7 /var/www/html/ci4.ombagoes.com/system/BaseModel.php(659): CodeIgniter\Model->insert()
+#8 /var/www/html/ci4.ombagoes.com/Master/Branch/Controllers/Branch.php(68): CodeIgniter\BaseModel->save()
+#9 /var/www/html/ci4.ombagoes.com/system/CodeIgniter.php(927): Master\Branch\Controllers\Branch->create()
+#10 /var/www/html/ci4.ombagoes.com/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+#11 /var/www/html/ci4.ombagoes.com/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+#12 /var/www/html/ci4.ombagoes.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2022-12-05 01:32:35 --> Unknown column 'limit_distance' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH/BaseModel.php(749): CodeIgniter\Model->doInsert()
+ 7 SYSTEMPATH/Model.php(667): CodeIgniter\BaseModel->insert()
+ 8 SYSTEMPATH/BaseModel.php(659): CodeIgniter\Model->insert()
+ 9 ROOTPATH/Master/Branch/Controllers/Branch.php(68): CodeIgniter\BaseModel->save()
+10 SYSTEMPATH/CodeIgniter.php(927): Master\Branch\Controllers\Branch->create()
+11 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+12 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+13 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-05 01:32:44 --> mysqli_sql_exception: Unknown column 'limit_distance' in 'field list' in /var/www/html/ci4.ombagoes.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /var/www/html/ci4.ombagoes.com/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /var/www/html/ci4.ombagoes.com/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/ci4.ombagoes.com/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/ci4.ombagoes.com/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/ci4.ombagoes.com/system/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 /var/www/html/ci4.ombagoes.com/system/BaseModel.php(749): CodeIgniter\Model->doInsert()
+#6 /var/www/html/ci4.ombagoes.com/system/Model.php(667): CodeIgniter\BaseModel->insert()
+#7 /var/www/html/ci4.ombagoes.com/system/BaseModel.php(659): CodeIgniter\Model->insert()
+#8 /var/www/html/ci4.ombagoes.com/Master/Branch/Controllers/Branch.php(68): CodeIgniter\BaseModel->save()
+#9 /var/www/html/ci4.ombagoes.com/system/CodeIgniter.php(927): Master\Branch\Controllers\Branch->create()
+#10 /var/www/html/ci4.ombagoes.com/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+#11 /var/www/html/ci4.ombagoes.com/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+#12 /var/www/html/ci4.ombagoes.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2022-12-05 01:32:44 --> Unknown column 'limit_distance' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH/BaseModel.php(749): CodeIgniter\Model->doInsert()
+ 7 SYSTEMPATH/Model.php(667): CodeIgniter\BaseModel->insert()
+ 8 SYSTEMPATH/BaseModel.php(659): CodeIgniter\Model->insert()
+ 9 ROOTPATH/Master/Branch/Controllers/Branch.php(68): CodeIgniter\BaseModel->save()
+10 SYSTEMPATH/CodeIgniter.php(927): Master\Branch\Controllers\Branch->create()
+11 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+12 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+13 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-05 01:34:55 --> mysqli_sql_exception: Unknown column 'limit_distance' in 'field list' in /var/www/html/ci4.ombagoes.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /var/www/html/ci4.ombagoes.com/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /var/www/html/ci4.ombagoes.com/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/ci4.ombagoes.com/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/ci4.ombagoes.com/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/ci4.ombagoes.com/system/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 /var/www/html/ci4.ombagoes.com/system/BaseModel.php(749): CodeIgniter\Model->doInsert()
+#6 /var/www/html/ci4.ombagoes.com/system/Model.php(667): CodeIgniter\BaseModel->insert()
+#7 /var/www/html/ci4.ombagoes.com/system/BaseModel.php(659): CodeIgniter\Model->insert()
+#8 /var/www/html/ci4.ombagoes.com/Master/Branch/Controllers/Branch.php(68): CodeIgniter\BaseModel->save()
+#9 /var/www/html/ci4.ombagoes.com/system/CodeIgniter.php(927): Master\Branch\Controllers\Branch->create()
+#10 /var/www/html/ci4.ombagoes.com/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+#11 /var/www/html/ci4.ombagoes.com/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+#12 /var/www/html/ci4.ombagoes.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2022-12-05 01:34:55 --> Unknown column 'limit_distance' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH/BaseModel.php(749): CodeIgniter\Model->doInsert()
+ 7 SYSTEMPATH/Model.php(667): CodeIgniter\BaseModel->insert()
+ 8 SYSTEMPATH/BaseModel.php(659): CodeIgniter\Model->insert()
+ 9 ROOTPATH/Master/Branch/Controllers/Branch.php(68): CodeIgniter\BaseModel->save()
+10 SYSTEMPATH/CodeIgniter.php(927): Master\Branch\Controllers\Branch->create()
+11 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+12 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+13 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-05 01:36:14 --> mysqli_sql_exception: Unknown column 'limit_distance' in 'field list' in /var/www/html/ci4.ombagoes.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /var/www/html/ci4.ombagoes.com/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /var/www/html/ci4.ombagoes.com/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/ci4.ombagoes.com/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/ci4.ombagoes.com/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/ci4.ombagoes.com/system/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 /var/www/html/ci4.ombagoes.com/system/BaseModel.php(749): CodeIgniter\Model->doInsert()
+#6 /var/www/html/ci4.ombagoes.com/system/Model.php(667): CodeIgniter\BaseModel->insert()
+#7 /var/www/html/ci4.ombagoes.com/system/BaseModel.php(659): CodeIgniter\Model->insert()
+#8 /var/www/html/ci4.ombagoes.com/Master/Branch/Controllers/Branch.php(68): CodeIgniter\BaseModel->save()
+#9 /var/www/html/ci4.ombagoes.com/system/CodeIgniter.php(927): Master\Branch\Controllers\Branch->create()
+#10 /var/www/html/ci4.ombagoes.com/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+#11 /var/www/html/ci4.ombagoes.com/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+#12 /var/www/html/ci4.ombagoes.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2022-12-05 01:36:14 --> Unknown column 'limit_distance' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH/BaseModel.php(749): CodeIgniter\Model->doInsert()
+ 7 SYSTEMPATH/Model.php(667): CodeIgniter\BaseModel->insert()
+ 8 SYSTEMPATH/BaseModel.php(659): CodeIgniter\Model->insert()
+ 9 ROOTPATH/Master/Branch/Controllers/Branch.php(68): CodeIgniter\BaseModel->save()
+10 SYSTEMPATH/CodeIgniter.php(927): Master\Branch\Controllers\Branch->create()
+11 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+12 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+13 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-05 21:11:33 --> Undefined variable $db
+in APPPATH/Helpers/MY_form_helper.php on line 172.
+ 1 APPPATH/Helpers/MY_form_helper.php(172): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 ROOTPATH/Modules/User/Views/dataview.php(31): easyui_combobox()
+ 3 SYSTEMPATH/View/View.php(213): include('ROOTPATH/Modules/User/Views/dataview.php')
+ 4 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render()
+ 6 ROOTPATH/Modules/User/Controllers/UserController.php(38): view()
+ 7 SYSTEMPATH/CodeIgniter.php(927): Modules\User\Controllers\UserController->index()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-05 21:12:22 --> Undefined variable $db
+in APPPATH/Helpers/MY_combobox_helper.php on line 48.
+ 1 APPPATH/Helpers/MY_combobox_helper.php(48): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 ROOTPATH/Modules/User/Views/dataview.php(58): easyui_group()
+ 3 SYSTEMPATH/View/View.php(213): include('ROOTPATH/Modules/User/Views/dataview.php')
+ 4 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render()
+ 6 ROOTPATH/Modules/User/Controllers/UserController.php(38): view()
+ 7 SYSTEMPATH/CodeIgniter.php(927): Modules\User\Controllers\UserController->index()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-05 21:15:31 --> mysqli_sql_exception: Unknown column 'email' in 'field list' in /var/www/html/ci4.ombagoes.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /var/www/html/ci4.ombagoes.com/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /var/www/html/ci4.ombagoes.com/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/ci4.ombagoes.com/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/ci4.ombagoes.com/Modules/User/Controllers/UserController.php(57): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/ci4.ombagoes.com/system/CodeIgniter.php(927): Modules\User\Controllers\UserController->get_data()
+#5 /var/www/html/ci4.ombagoes.com/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+#6 /var/www/html/ci4.ombagoes.com/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+#7 /var/www/html/ci4.ombagoes.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-12-05 21:15:31 --> Unknown column 'email' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 ROOTPATH/Modules/User/Controllers/UserController.php(57): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/CodeIgniter.php(927): Modules\User\Controllers\UserController->get_data()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-05 21:15:47 --> mysqli_sql_exception: Unknown column 'email' in 'field list' in /var/www/html/ci4.ombagoes.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /var/www/html/ci4.ombagoes.com/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /var/www/html/ci4.ombagoes.com/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/ci4.ombagoes.com/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/ci4.ombagoes.com/Modules/User/Controllers/UserController.php(57): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/ci4.ombagoes.com/system/CodeIgniter.php(927): Modules\User\Controllers\UserController->get_data()
+#5 /var/www/html/ci4.ombagoes.com/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+#6 /var/www/html/ci4.ombagoes.com/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+#7 /var/www/html/ci4.ombagoes.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-12-05 21:15:47 --> Unknown column 'email' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 ROOTPATH/Modules/User/Controllers/UserController.php(57): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/CodeIgniter.php(927): Modules\User\Controllers\UserController->get_data()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-05 21:16:18 --> mysqli_sql_exception: Unknown column 'g.name' in 'field list' in /var/www/html/ci4.ombagoes.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /var/www/html/ci4.ombagoes.com/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /var/www/html/ci4.ombagoes.com/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/ci4.ombagoes.com/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/ci4.ombagoes.com/Modules/User/Controllers/UserController.php(57): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/ci4.ombagoes.com/system/CodeIgniter.php(927): Modules\User\Controllers\UserController->get_data()
+#5 /var/www/html/ci4.ombagoes.com/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+#6 /var/www/html/ci4.ombagoes.com/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+#7 /var/www/html/ci4.ombagoes.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-12-05 21:16:18 --> Unknown column 'g.name' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 ROOTPATH/Modules/User/Controllers/UserController.php(57): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/CodeIgniter.php(927): Modules\User\Controllers\UserController->get_data()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-05 22:04:04 --> Class "App\Libraries\PlatformDetect" not found
+in ROOTPATH/Modules/User/Controllers/UserController.php on line 28.
+ 1 SYSTEMPATH/CodeIgniter.php(889): Modules\User\Controllers\UserController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-05 22:04:52 --> Class "App\Libraries\PlatformDetect" not found
+in ROOTPATH/Modules/User/Controllers/UserController.php on line 28.
+ 1 SYSTEMPATH/CodeIgniter.php(889): Modules\User\Controllers\UserController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-05 22:05:37 --> Undefined property: App\Libraries\PlatformDetect::$request
+in APPPATH/Libraries/PlatformDetect.php on line 6.
+ 1 APPPATH/Libraries/PlatformDetect.php(6): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 ROOTPATH/Modules/User/Controllers/UserController.php(41): App\Libraries\PlatformDetect->isMobile()
+ 3 SYSTEMPATH/CodeIgniter.php(927): Modules\User\Controllers\UserController->index()
+ 4 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-05 22:07:10 --> Call to a member function getUserAgent() on null
+in ROOTPATH/Modules/User/Controllers/UserController.php on line 28.
+ 1 SYSTEMPATH/CodeIgniter.php(889): Modules\User\Controllers\UserController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-05 22:08:01 --> Call to a member function getUserAgent() on null
+in ROOTPATH/Modules/User/Controllers/UserController.php on line 28.
+ 1 SYSTEMPATH/CodeIgniter.php(889): Modules\User\Controllers\UserController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-05 22:31:26 --> Call to a member function getTimestamp() on int
+in ROOTPATH/Modules/Perm/Controllers/PermController.php on line 108.
+ 1 SYSTEMPATH/CodeIgniter.php(927): Modules\Perm\Controllers\PermController->test()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-05 22:33:17 --> Class "Modules\Perm\Controllers\Time" not found
+in ROOTPATH/Modules/Perm/Controllers/PermController.php on line 109.
+ 1 SYSTEMPATH/CodeIgniter.php(927): Modules\Perm\Controllers\PermController->test()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-05 22:33:36 --> Call to a member function getTimestamp() on int
+in ROOTPATH/Modules/Perm/Controllers/PermController.php on line 109.
+ 1 SYSTEMPATH/CodeIgniter.php(927): Modules\Perm\Controllers\PermController->test()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-05 23:21:13 --> mysqli_sql_exception: Unknown column 'label' in 'order clause' in /var/www/html/ci4.ombagoes.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /var/www/html/ci4.ombagoes.com/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /var/www/html/ci4.ombagoes.com/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/ci4.ombagoes.com/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/ci4.ombagoes.com/system/Database/BaseBuilder.php(1718): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/ci4.ombagoes.com/app/Helpers/MY_combobox_helper.php(81): CodeIgniter\Database\BaseBuilder->getWhere()
+#5 /var/www/html/ci4.ombagoes.com/Master/Department/Views/dataview.php(49): easyui_department()
+#6 /var/www/html/ci4.ombagoes.com/system/View/View.php(213): include('...')
+#7 /var/www/html/ci4.ombagoes.com/system/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#8 /var/www/html/ci4.ombagoes.com/system/Common.php(1134): CodeIgniter\View\View->render()
+#9 /var/www/html/ci4.ombagoes.com/Master/Department/Controllers/Department.php(30): view()
+#10 /var/www/html/ci4.ombagoes.com/system/CodeIgniter.php(927): Master\Department\Controllers\Department->index()
+#11 /var/www/html/ci4.ombagoes.com/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+#12 /var/www/html/ci4.ombagoes.com/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+#13 /var/www/html/ci4.ombagoes.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2022-12-05 23:21:13 --> Unknown column 'label' in 'order clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1718): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH/Helpers/MY_combobox_helper.php(81): CodeIgniter\Database\BaseBuilder->getWhere()
+ 6 ROOTPATH/Master/Department/Views/dataview.php(49): easyui_department()
+ 7 SYSTEMPATH/View/View.php(213): include('ROOTPATH/Master/Department/Views/dataview.php')
+ 8 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render()
+10 ROOTPATH/Master/Department/Controllers/Department.php(30): view()
+11 SYSTEMPATH/CodeIgniter.php(927): Master\Department\Controllers\Department->index()
+12 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+13 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+14 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-05 23:25:02 --> mysqli_sql_exception: Unknown table 'ci4ombagoescom.d' in /var/www/html/ci4.ombagoes.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /var/www/html/ci4.ombagoes.com/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /var/www/html/ci4.ombagoes.com/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/ci4.ombagoes.com/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/ci4.ombagoes.com/Master/Department/Controllers/Department.php(48): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/ci4.ombagoes.com/system/CodeIgniter.php(927): Master\Department\Controllers\Department->get_data()
+#5 /var/www/html/ci4.ombagoes.com/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+#6 /var/www/html/ci4.ombagoes.com/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+#7 /var/www/html/ci4.ombagoes.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-12-05 23:25:02 --> Unknown table 'ci4ombagoescom.d'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 ROOTPATH/Master/Department/Controllers/Department.php(48): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/CodeIgniter.php(927): Master\Department\Controllers\Department->get_data()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-05 23:27:33 --> Undefined array key "label"
+in APPPATH/Helpers/MY_combobox_helper.php on line 89.
+ 1 APPPATH/Helpers/MY_combobox_helper.php(89): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 ROOTPATH/Master/Department/Views/dataview.php(31): easyui_department()
+ 3 SYSTEMPATH/View/View.php(213): include('ROOTPATH/Master/Department/Views/dataview.php')
+ 4 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render()
+ 6 ROOTPATH/Master/Department/Controllers/Department.php(30): view()
+ 7 SYSTEMPATH/CodeIgniter.php(927): Master\Department\Controllers\Department->index()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-05 23:28:29 --> mysqli_sql_exception: Unknown table 'ci4ombagoescom.d' in /var/www/html/ci4.ombagoes.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /var/www/html/ci4.ombagoes.com/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /var/www/html/ci4.ombagoes.com/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/ci4.ombagoes.com/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/ci4.ombagoes.com/Master/Department/Controllers/Department.php(48): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/ci4.ombagoes.com/system/CodeIgniter.php(927): Master\Department\Controllers\Department->get_data()
+#5 /var/www/html/ci4.ombagoes.com/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+#6 /var/www/html/ci4.ombagoes.com/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+#7 /var/www/html/ci4.ombagoes.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-12-05 23:28:29 --> Unknown table 'ci4ombagoescom.d'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 ROOTPATH/Master/Department/Controllers/Department.php(48): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/CodeIgniter.php(927): Master\Department\Controllers\Department->get_data()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-05 23:28:51 --> mysqli_sql_exception: Unknown table 'ci4ombagoescom.d' in /var/www/html/ci4.ombagoes.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /var/www/html/ci4.ombagoes.com/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /var/www/html/ci4.ombagoes.com/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/ci4.ombagoes.com/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/ci4.ombagoes.com/Master/Department/Controllers/Department.php(48): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/ci4.ombagoes.com/system/CodeIgniter.php(927): Master\Department\Controllers\Department->get_data()
+#5 /var/www/html/ci4.ombagoes.com/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+#6 /var/www/html/ci4.ombagoes.com/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+#7 /var/www/html/ci4.ombagoes.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-12-05 23:28:51 --> Unknown table 'ci4ombagoescom.d'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 ROOTPATH/Master/Department/Controllers/Department.php(48): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/CodeIgniter.php(927): Master\Department\Controllers\Department->get_data()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-05 23:29:21 --> mysqli_sql_exception: Column 'id' in on clause is ambiguous in /var/www/html/ci4.ombagoes.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /var/www/html/ci4.ombagoes.com/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /var/www/html/ci4.ombagoes.com/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/ci4.ombagoes.com/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/ci4.ombagoes.com/Master/Department/Controllers/Department.php(48): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/ci4.ombagoes.com/system/CodeIgniter.php(927): Master\Department\Controllers\Department->get_data()
+#5 /var/www/html/ci4.ombagoes.com/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+#6 /var/www/html/ci4.ombagoes.com/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+#7 /var/www/html/ci4.ombagoes.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-12-05 23:29:21 --> Column 'id' in on clause is ambiguous
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 ROOTPATH/Master/Department/Controllers/Department.php(48): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/CodeIgniter.php(927): Master\Department\Controllers\Department->get_data()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-05 23:33:52 --> mysqli_sql_exception: Unknown column 'tagname' in 'order clause' in /var/www/html/ci4.ombagoes.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /var/www/html/ci4.ombagoes.com/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /var/www/html/ci4.ombagoes.com/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/ci4.ombagoes.com/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/ci4.ombagoes.com/Master/Department/Controllers/Department.php(52): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/ci4.ombagoes.com/system/CodeIgniter.php(927): Master\Department\Controllers\Department->get_data()
+#5 /var/www/html/ci4.ombagoes.com/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+#6 /var/www/html/ci4.ombagoes.com/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+#7 /var/www/html/ci4.ombagoes.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-12-05 23:33:52 --> Unknown column 'tagname' in 'order clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 ROOTPATH/Master/Department/Controllers/Department.php(52): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/CodeIgniter.php(927): Master\Department\Controllers\Department->get_data()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-05 23:33:52 --> mysqli_sql_exception: Unknown column 'tagname' in 'order clause' in /var/www/html/ci4.ombagoes.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /var/www/html/ci4.ombagoes.com/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /var/www/html/ci4.ombagoes.com/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/ci4.ombagoes.com/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/ci4.ombagoes.com/Master/Department/Controllers/Department.php(52): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/ci4.ombagoes.com/system/CodeIgniter.php(927): Master\Department\Controllers\Department->get_data()
+#5 /var/www/html/ci4.ombagoes.com/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+#6 /var/www/html/ci4.ombagoes.com/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+#7 /var/www/html/ci4.ombagoes.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-12-05 23:33:52 --> Unknown column 'tagname' in 'order clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 ROOTPATH/Master/Department/Controllers/Department.php(52): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/CodeIgniter.php(927): Master\Department\Controllers\Department->get_data()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-05 23:33:54 --> mysqli_sql_exception: Unknown column 'tagname' in 'order clause' in /var/www/html/ci4.ombagoes.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /var/www/html/ci4.ombagoes.com/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /var/www/html/ci4.ombagoes.com/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/ci4.ombagoes.com/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/ci4.ombagoes.com/Master/Department/Controllers/Department.php(52): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/ci4.ombagoes.com/system/CodeIgniter.php(927): Master\Department\Controllers\Department->get_data()
+#5 /var/www/html/ci4.ombagoes.com/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+#6 /var/www/html/ci4.ombagoes.com/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+#7 /var/www/html/ci4.ombagoes.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-12-05 23:33:54 --> Unknown column 'tagname' in 'order clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 ROOTPATH/Master/Department/Controllers/Department.php(52): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/CodeIgniter.php(927): Master\Department\Controllers\Department->get_data()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-05 23:33:54 --> mysqli_sql_exception: Unknown column 'tagname' in 'order clause' in /var/www/html/ci4.ombagoes.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /var/www/html/ci4.ombagoes.com/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /var/www/html/ci4.ombagoes.com/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/ci4.ombagoes.com/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/ci4.ombagoes.com/Master/Department/Controllers/Department.php(52): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/ci4.ombagoes.com/system/CodeIgniter.php(927): Master\Department\Controllers\Department->get_data()
+#5 /var/www/html/ci4.ombagoes.com/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+#6 /var/www/html/ci4.ombagoes.com/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+#7 /var/www/html/ci4.ombagoes.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-12-05 23:33:54 --> Unknown column 'tagname' in 'order clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 ROOTPATH/Master/Department/Controllers/Department.php(52): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/CodeIgniter.php(927): Master\Department\Controllers\Department->get_data()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-05 23:33:55 --> mysqli_sql_exception: Unknown column 'tagname' in 'order clause' in /var/www/html/ci4.ombagoes.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /var/www/html/ci4.ombagoes.com/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /var/www/html/ci4.ombagoes.com/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/ci4.ombagoes.com/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/ci4.ombagoes.com/Master/Department/Controllers/Department.php(52): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/ci4.ombagoes.com/system/CodeIgniter.php(927): Master\Department\Controllers\Department->get_data()
+#5 /var/www/html/ci4.ombagoes.com/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+#6 /var/www/html/ci4.ombagoes.com/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+#7 /var/www/html/ci4.ombagoes.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-12-05 23:33:55 --> Unknown column 'tagname' in 'order clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 ROOTPATH/Master/Department/Controllers/Department.php(52): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/CodeIgniter.php(927): Master\Department\Controllers\Department->get_data()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-05 23:33:57 --> mysqli_sql_exception: Unknown column 'tagname' in 'order clause' in /var/www/html/ci4.ombagoes.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /var/www/html/ci4.ombagoes.com/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /var/www/html/ci4.ombagoes.com/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/ci4.ombagoes.com/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/ci4.ombagoes.com/Master/Department/Controllers/Department.php(52): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/ci4.ombagoes.com/system/CodeIgniter.php(927): Master\Department\Controllers\Department->get_data()
+#5 /var/www/html/ci4.ombagoes.com/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+#6 /var/www/html/ci4.ombagoes.com/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+#7 /var/www/html/ci4.ombagoes.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-12-05 23:33:57 --> Unknown column 'tagname' in 'order clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 ROOTPATH/Master/Department/Controllers/Department.php(52): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/CodeIgniter.php(927): Master\Department\Controllers\Department->get_data()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-05 23:33:58 --> mysqli_sql_exception: Unknown column 'tagname' in 'order clause' in /var/www/html/ci4.ombagoes.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /var/www/html/ci4.ombagoes.com/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /var/www/html/ci4.ombagoes.com/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/ci4.ombagoes.com/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/ci4.ombagoes.com/Master/Department/Controllers/Department.php(52): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/ci4.ombagoes.com/system/CodeIgniter.php(927): Master\Department\Controllers\Department->get_data()
+#5 /var/www/html/ci4.ombagoes.com/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+#6 /var/www/html/ci4.ombagoes.com/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+#7 /var/www/html/ci4.ombagoes.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-12-05 23:33:58 --> Unknown column 'tagname' in 'order clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 ROOTPATH/Master/Department/Controllers/Department.php(52): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/CodeIgniter.php(927): Master\Department\Controllers\Department->get_data()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-05 23:33:59 --> mysqli_sql_exception: Unknown column 'tagname' in 'order clause' in /var/www/html/ci4.ombagoes.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /var/www/html/ci4.ombagoes.com/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /var/www/html/ci4.ombagoes.com/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/ci4.ombagoes.com/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/ci4.ombagoes.com/Master/Department/Controllers/Department.php(52): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/ci4.ombagoes.com/system/CodeIgniter.php(927): Master\Department\Controllers\Department->get_data()
+#5 /var/www/html/ci4.ombagoes.com/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+#6 /var/www/html/ci4.ombagoes.com/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+#7 /var/www/html/ci4.ombagoes.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-12-05 23:33:59 --> Unknown column 'tagname' in 'order clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 ROOTPATH/Master/Department/Controllers/Department.php(52): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/CodeIgniter.php(927): Master\Department\Controllers\Department->get_data()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-05 23:33:59 --> mysqli_sql_exception: Unknown column 'tagname' in 'order clause' in /var/www/html/ci4.ombagoes.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /var/www/html/ci4.ombagoes.com/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /var/www/html/ci4.ombagoes.com/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/ci4.ombagoes.com/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/ci4.ombagoes.com/Master/Department/Controllers/Department.php(52): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/ci4.ombagoes.com/system/CodeIgniter.php(927): Master\Department\Controllers\Department->get_data()
+#5 /var/www/html/ci4.ombagoes.com/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+#6 /var/www/html/ci4.ombagoes.com/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+#7 /var/www/html/ci4.ombagoes.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-12-05 23:33:59 --> Unknown column 'tagname' in 'order clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 ROOTPATH/Master/Department/Controllers/Department.php(52): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/CodeIgniter.php(927): Master\Department\Controllers\Department->get_data()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-05 23:34:07 --> mysqli_sql_exception: Unknown column 'tagname' in 'order clause' in /var/www/html/ci4.ombagoes.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /var/www/html/ci4.ombagoes.com/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /var/www/html/ci4.ombagoes.com/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/ci4.ombagoes.com/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/ci4.ombagoes.com/Master/Department/Controllers/Department.php(52): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/ci4.ombagoes.com/system/CodeIgniter.php(927): Master\Department\Controllers\Department->get_data()
+#5 /var/www/html/ci4.ombagoes.com/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+#6 /var/www/html/ci4.ombagoes.com/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+#7 /var/www/html/ci4.ombagoes.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-12-05 23:34:07 --> Unknown column 'tagname' in 'order clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 ROOTPATH/Master/Department/Controllers/Department.php(52): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/CodeIgniter.php(927): Master\Department\Controllers\Department->get_data()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-05 23:34:08 --> mysqli_sql_exception: Unknown column 'tagname' in 'order clause' in /var/www/html/ci4.ombagoes.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /var/www/html/ci4.ombagoes.com/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /var/www/html/ci4.ombagoes.com/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/ci4.ombagoes.com/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/ci4.ombagoes.com/Master/Department/Controllers/Department.php(52): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/ci4.ombagoes.com/system/CodeIgniter.php(927): Master\Department\Controllers\Department->get_data()
+#5 /var/www/html/ci4.ombagoes.com/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+#6 /var/www/html/ci4.ombagoes.com/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+#7 /var/www/html/ci4.ombagoes.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-12-05 23:34:08 --> Unknown column 'tagname' in 'order clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 ROOTPATH/Master/Department/Controllers/Department.php(52): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/CodeIgniter.php(927): Master\Department\Controllers\Department->get_data()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

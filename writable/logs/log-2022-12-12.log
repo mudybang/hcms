@@ -1,0 +1,543 @@
+ERROR - 2022-12-12 13:05:06 --> mysqli_sql_exception: Table 'ci4ombagoescom.employees_bio' doesn't exist in /var/www/html/ci4.ombagoes.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /var/www/html/ci4.ombagoes.com/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /var/www/html/ci4.ombagoes.com/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/ci4.ombagoes.com/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/ci4.ombagoes.com/Modules/Employee/Controllers/Employee.php(109): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/ci4.ombagoes.com/system/CodeIgniter.php(927): Modules\Employee\Controllers\Employee->get_data()
+#5 /var/www/html/ci4.ombagoes.com/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+#6 /var/www/html/ci4.ombagoes.com/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+#7 /var/www/html/ci4.ombagoes.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-12-12 13:05:06 --> Table 'ci4ombagoescom.employees_bio' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 ROOTPATH/Modules/Employee/Controllers/Employee.php(109): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/CodeIgniter.php(927): Modules\Employee\Controllers\Employee->get_data()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-12 13:05:16 --> mysqli_sql_exception: Table 'ci4ombagoescom.employees_bio' doesn't exist in /var/www/html/ci4.ombagoes.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /var/www/html/ci4.ombagoes.com/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /var/www/html/ci4.ombagoes.com/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/ci4.ombagoes.com/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/ci4.ombagoes.com/Modules/Employee/Controllers/Employee.php(109): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/ci4.ombagoes.com/system/CodeIgniter.php(927): Modules\Employee\Controllers\Employee->get_data()
+#5 /var/www/html/ci4.ombagoes.com/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+#6 /var/www/html/ci4.ombagoes.com/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+#7 /var/www/html/ci4.ombagoes.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-12-12 13:05:16 --> Table 'ci4ombagoescom.employees_bio' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 ROOTPATH/Modules/Employee/Controllers/Employee.php(109): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/CodeIgniter.php(927): Modules\Employee\Controllers\Employee->get_data()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-12 13:06:16 --> Undefined variable $messages
+in ROOTPATH/Modules/Employee/Controllers/EmployeeBio.php on line 72.
+ 1 ROOTPATH/Modules/Employee/Controllers/EmployeeBio.php(72): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(927): Modules\Employee\Controllers\EmployeeBio->update()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-12 13:28:09 --> Call to a member function isValid() on null
+in APPPATH/Libraries/UploadFile.php on line 17.
+ 1 ROOTPATH/Modules/Employee/Controllers/EmployeeRepun.php(89): App\Libraries\UploadFile->single_upload()
+ 2 SYSTEMPATH/CodeIgniter.php(927): Modules\Employee\Controllers\EmployeeRepun->create_punishment()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-12 13:39:46 --> Call to a member function isValid() on null
+in APPPATH/Libraries/UploadFile.php on line 18.
+ 1 ROOTPATH/Modules/Employee/Controllers/EmployeeRepun.php(89): App\Libraries\UploadFile->single_upload()
+ 2 SYSTEMPATH/CodeIgniter.php(927): Modules\Employee\Controllers\EmployeeRepun->create_punishment()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-12 13:40:47 --> Call to a member function isValid() on null
+in APPPATH/Libraries/UploadFile.php on line 18.
+ 1 ROOTPATH/Modules/Employee/Controllers/EmployeeRepun.php(89): App\Libraries\UploadFile->single_upload()
+ 2 SYSTEMPATH/CodeIgniter.php(927): Modules\Employee\Controllers\EmployeeRepun->create_punishment()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-12 13:42:54 --> Object of class Modules\Employee\Controllers\EmployeeRepun could not be converted to string
+in APPPATH/Libraries/UploadFile.php on line 47.
+ 1 ROOTPATH/Modules/Employee/Controllers/EmployeeRepun.php(89): App\Libraries\UploadFile->single_upload()
+ 2 SYSTEMPATH/CodeIgniter.php(927): Modules\Employee\Controllers\EmployeeRepun->create_punishment()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-12 13:43:45 --> Too few arguments to function App\Libraries\UploadFile::single_upload(), 2 passed in /var/www/html/ci4.ombagoes.com/Modules/Employee/Controllers/EmployeeRepun.php on line 89 and exactly 3 expected
+in APPPATH/Libraries/UploadFile.php on line 14.
+ 1 ROOTPATH/Modules/Employee/Controllers/EmployeeRepun.php(89): App\Libraries\UploadFile->single_upload()
+ 2 SYSTEMPATH/CodeIgniter.php(927): Modules\Employee\Controllers\EmployeeRepun->create_punishment()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-12 13:50:22 --> Undefined property: App\Libraries\UploadFile::$response
+in APPPATH/Libraries/UploadFile.php on line 43.
+ 1 APPPATH/Libraries/UploadFile.php(43): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 ROOTPATH/Modules/Employee/Controllers/EmployeeRepun.php(58): App\Libraries\UploadFile->single_upload()
+ 3 SYSTEMPATH/CodeIgniter.php(927): Modules\Employee\Controllers\EmployeeRepun->create_reward()
+ 4 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-12 13:50:32 --> Undefined property: App\Libraries\UploadFile::$response
+in APPPATH/Libraries/UploadFile.php on line 43.
+ 1 APPPATH/Libraries/UploadFile.php(43): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 ROOTPATH/Modules/Employee/Controllers/EmployeeRepun.php(58): App\Libraries\UploadFile->single_upload()
+ 3 SYSTEMPATH/CodeIgniter.php(927): Modules\Employee\Controllers\EmployeeRepun->create_reward()
+ 4 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-12 14:27:28 --> Undefined array key "upload"
+in APPPATH/Libraries/UploadFile.php on line 84.
+ 1 APPPATH/Libraries/UploadFile.php(84): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 ROOTPATH/Modules/Employee/Controllers/EmployeeBio.php(65): App\Libraries\UploadFile->multiple_upload()
+ 3 SYSTEMPATH/CodeIgniter.php(927): Modules\Employee\Controllers\EmployeeBio->update()
+ 4 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-12 14:28:42 --> Undefined array key "userfile0"
+in APPPATH/Libraries/UploadFile.php on line 84.
+ 1 APPPATH/Libraries/UploadFile.php(84): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 ROOTPATH/Modules/Employee/Controllers/EmployeeBio.php(65): App\Libraries\UploadFile->multiple_upload()
+ 3 SYSTEMPATH/CodeIgniter.php(927): Modules\Employee\Controllers\EmployeeBio->update()
+ 4 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-12 14:30:23 --> Array to string conversion
+in ROOTPATH/Modules/Employee/Views/bio.php on line 20.
+ 1 ROOTPATH/Modules/Employee/Views/bio.php(20): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('ROOTPATH/Modules/Employee/Views/bio.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render()
+ 5 ROOTPATH/Modules/Employee/Controllers/EmployeeBio.php(37): view()
+ 6 SYSTEMPATH/CodeIgniter.php(927): Modules\Employee\Controllers\EmployeeBio->index()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-12 15:02:55 --> Undefined array key "attachment_kk"
+in ROOTPATH/Modules/Employee/Views/sibling.php on line 33.
+ 1 ROOTPATH/Modules/Employee/Views/sibling.php(33): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('ROOTPATH/Modules/Employee/Views/sibling.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render()
+ 5 ROOTPATH/Modules/Employee/Controllers/EmployeeSibling.php(35): view()
+ 6 SYSTEMPATH/CodeIgniter.php(927): Modules\Employee\Controllers\EmployeeSibling->index()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-12 15:45:15 --> Undefined property: Modules\Employee\Controllers\EmployeeSibling::$uploadfile
+in ROOTPATH/Modules/Employee/Controllers/EmployeeSibling.php on line 66.
+ 1 ROOTPATH/Modules/Employee/Controllers/EmployeeSibling.php(66): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(927): Modules\Employee\Controllers\EmployeeSibling->update()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-12 15:47:56 --> foreach() argument must be of type array|object, string given
+in ROOTPATH/Modules/Employee/Views/sibling.php on line 18.
+ 1 ROOTPATH/Modules/Employee/Views/sibling.php(18): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('ROOTPATH/Modules/Employee/Views/sibling.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render()
+ 5 ROOTPATH/Modules/Employee/Controllers/EmployeeSibling.php(37): view()
+ 6 SYSTEMPATH/CodeIgniter.php(927): Modules\Employee\Controllers\EmployeeSibling->index()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-12 15:54:58 --> Undefined array key "errorMessage"
+in ROOTPATH/Modules/Employee/Controllers/EmployeeSibling.php on line 74.
+ 1 ROOTPATH/Modules/Employee/Controllers/EmployeeSibling.php(74): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(927): Modules\Employee\Controllers\EmployeeSibling->update()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-12 15:57:23 --> Undefined array key "errorMessage"
+in ROOTPATH/Modules/Employee/Controllers/EmployeeSibling.php on line 74.
+ 1 ROOTPATH/Modules/Employee/Controllers/EmployeeSibling.php(74): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(927): Modules\Employee\Controllers\EmployeeSibling->update()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-12 16:05:30 --> Array to string conversion
+in ROOTPATH/Modules/Employee/Controllers/EmployeeSibling.php on line 70.
+ 1 ROOTPATH/Modules/Employee/Controllers/EmployeeSibling.php(70): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(927): Modules\Employee\Controllers\EmployeeSibling->update()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-12 16:05:45 --> Undefined variable $upload
+in ROOTPATH/Modules/Employee/Controllers/EmployeeSibling.php on line 71.
+ 1 ROOTPATH/Modules/Employee/Controllers/EmployeeSibling.php(71): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(927): Modules\Employee\Controllers\EmployeeSibling->update()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-12 16:13:57 --> There is no data to update.
+in SYSTEMPATH/BaseModel.php on line 867.
+ 1 SYSTEMPATH/BaseModel.php(867): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset()
+ 2 SYSTEMPATH/Model.php(693): CodeIgniter\BaseModel->update()
+ 3 ROOTPATH/Modules/Employee/Controllers/EmployeeSibling.php(73): CodeIgniter\Model->update()
+ 4 SYSTEMPATH/CodeIgniter.php(927): Modules\Employee\Controllers\EmployeeSibling->update()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-12 16:14:53 --> There is no data to update.
+in SYSTEMPATH/BaseModel.php on line 867.
+ 1 SYSTEMPATH/BaseModel.php(867): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset()
+ 2 SYSTEMPATH/Model.php(693): CodeIgniter\BaseModel->update()
+ 3 ROOTPATH/Modules/Employee/Controllers/EmployeeSibling.php(73): CodeIgniter\Model->update()
+ 4 SYSTEMPATH/CodeIgniter.php(927): Modules\Employee\Controllers\EmployeeSibling->update()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-12 16:15:07 --> There is no data to update.
+in SYSTEMPATH/BaseModel.php on line 867.
+ 1 SYSTEMPATH/BaseModel.php(867): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset()
+ 2 SYSTEMPATH/Model.php(693): CodeIgniter\BaseModel->update()
+ 3 ROOTPATH/Modules/Employee/Controllers/EmployeeSibling.php(73): CodeIgniter\Model->update()
+ 4 SYSTEMPATH/CodeIgniter.php(927): Modules\Employee\Controllers\EmployeeSibling->update()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-12 16:36:05 --> Undefined variable $employee_id
+in ROOTPATH/Modules/Employee/Controllers/Employee.php on line 306.
+ 1 ROOTPATH/Modules/Employee/Controllers/Employee.php(306): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(927): Modules\Employee\Controllers\Employee->update()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-12 16:36:14 --> Undefined variable $employee_id
+in ROOTPATH/Modules/Employee/Controllers/Employee.php on line 306.
+ 1 ROOTPATH/Modules/Employee/Controllers/Employee.php(306): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(927): Modules\Employee\Controllers\Employee->update()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-12 16:37:02 --> sizeof(): Argument #1 ($value) must be of type Countable|array, bool given
+in ROOTPATH/Modules/Employee/Controllers/Employee.php on line 313.
+ 1 ROOTPATH/Modules/Employee/Controllers/Employee.php(313): sizeof()
+ 2 SYSTEMPATH/CodeIgniter.php(927): Modules\Employee\Controllers\Employee->update()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-12 16:39:58 --> sizeof(): Argument #1 ($value) must be of type Countable|array, bool given
+in ROOTPATH/Modules/Employee/Controllers/Employee.php on line 313.
+ 1 ROOTPATH/Modules/Employee/Controllers/Employee.php(313): sizeof()
+ 2 SYSTEMPATH/CodeIgniter.php(927): Modules\Employee\Controllers\Employee->update()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-12 16:40:14 --> sizeof(): Argument #1 ($value) must be of type Countable|array, bool given
+in ROOTPATH/Modules/Employee/Controllers/Employee.php on line 313.
+ 1 ROOTPATH/Modules/Employee/Controllers/Employee.php(313): sizeof()
+ 2 SYSTEMPATH/CodeIgniter.php(927): Modules\Employee\Controllers\Employee->update()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-12 16:43:09 --> There is no data to update.
+in SYSTEMPATH/BaseModel.php on line 867.
+ 1 SYSTEMPATH/BaseModel.php(867): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset()
+ 2 SYSTEMPATH/Model.php(693): CodeIgniter\BaseModel->update()
+ 3 ROOTPATH/Modules/Employee/Controllers/Employee.php(310): CodeIgniter\Model->update()
+ 4 SYSTEMPATH/CodeIgniter.php(927): Modules\Employee\Controllers\Employee->update()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-12 16:49:22 --> mysqli_sql_exception: Table 'ci4ombagoescom.employees_bio' doesn't exist in /var/www/html/ci4.ombagoes.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /var/www/html/ci4.ombagoes.com/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /var/www/html/ci4.ombagoes.com/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/ci4.ombagoes.com/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/ci4.ombagoes.com/Modules/Employee/Controllers/EmployeeStatus.php(46): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/ci4.ombagoes.com/system/CodeIgniter.php(927): Modules\Employee\Controllers\EmployeeStatus->index()
+#5 /var/www/html/ci4.ombagoes.com/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+#6 /var/www/html/ci4.ombagoes.com/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+#7 /var/www/html/ci4.ombagoes.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-12-12 16:49:22 --> Table 'ci4ombagoescom.employees_bio' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 ROOTPATH/Modules/Employee/Controllers/EmployeeStatus.php(46): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/CodeIgniter.php(927): Modules\Employee\Controllers\EmployeeStatus->index()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-12 16:49:27 --> mysqli_sql_exception: Table 'ci4ombagoescom.employees_bio' doesn't exist in /var/www/html/ci4.ombagoes.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /var/www/html/ci4.ombagoes.com/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /var/www/html/ci4.ombagoes.com/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/ci4.ombagoes.com/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/ci4.ombagoes.com/Modules/Employee/Controllers/EmployeeStatus.php(46): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/ci4.ombagoes.com/system/CodeIgniter.php(927): Modules\Employee\Controllers\EmployeeStatus->index()
+#5 /var/www/html/ci4.ombagoes.com/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+#6 /var/www/html/ci4.ombagoes.com/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+#7 /var/www/html/ci4.ombagoes.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-12-12 16:49:27 --> Table 'ci4ombagoescom.employees_bio' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 ROOTPATH/Modules/Employee/Controllers/EmployeeStatus.php(46): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/CodeIgniter.php(927): Modules\Employee\Controllers\EmployeeStatus->index()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-12 18:18:00 --> mysqli_sql_exception: Table 'ci4ombagoescom.employees_experiences' doesn't exist in /var/www/html/ci4.ombagoes.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /var/www/html/ci4.ombagoes.com/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /var/www/html/ci4.ombagoes.com/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/ci4.ombagoes.com/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/ci4.ombagoes.com/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/ci4.ombagoes.com/system/Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/html/ci4.ombagoes.com/system/BaseModel.php(585): CodeIgniter\Model->doFindAll()
+#6 /var/www/html/ci4.ombagoes.com/Modules/Employee/Controllers/EmployeeEduexp.php(37): CodeIgniter\BaseModel->findAll()
+#7 /var/www/html/ci4.ombagoes.com/system/CodeIgniter.php(927): Modules\Employee\Controllers\EmployeeEduexp->index()
+#8 /var/www/html/ci4.ombagoes.com/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+#9 /var/www/html/ci4.ombagoes.com/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+#10 /var/www/html/ci4.ombagoes.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-12-12 18:18:00 --> Table 'ci4ombagoescom.employees_experiences' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(585): CodeIgniter\Model->doFindAll()
+ 7 ROOTPATH/Modules/Employee/Controllers/EmployeeEduexp.php(37): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH/CodeIgniter.php(927): Modules\Employee\Controllers\EmployeeEduexp->index()
+ 9 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-12 18:19:47 --> mysqli_sql_exception: Table 'ci4ombagoescom.employees_education' doesn't exist in /var/www/html/ci4.ombagoes.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /var/www/html/ci4.ombagoes.com/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /var/www/html/ci4.ombagoes.com/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/ci4.ombagoes.com/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/ci4.ombagoes.com/system/Database/BaseBuilder.php(1718): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/ci4.ombagoes.com/Modules/Employee/Controllers/EmployeeEduexp.php(66): CodeIgniter\Database\BaseBuilder->getWhere()
+#5 /var/www/html/ci4.ombagoes.com/Modules/Employee/Controllers/EmployeeEduexp.php(53): Modules\Employee\Controllers\EmployeeEduexp->sync_edu()
+#6 /var/www/html/ci4.ombagoes.com/system/CodeIgniter.php(927): Modules\Employee\Controllers\EmployeeEduexp->create_edu()
+#7 /var/www/html/ci4.ombagoes.com/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/html/ci4.ombagoes.com/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/html/ci4.ombagoes.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-12-12 18:19:47 --> Table 'ci4ombagoescom.employees_education' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1718): CodeIgniter\Database\BaseConnection->query()
+ 5 ROOTPATH/Modules/Employee/Controllers/EmployeeEduexp.php(66): CodeIgniter\Database\BaseBuilder->getWhere()
+ 6 ROOTPATH/Modules/Employee/Controllers/EmployeeEduexp.php(53): Modules\Employee\Controllers\EmployeeEduexp->sync_edu()
+ 7 SYSTEMPATH/CodeIgniter.php(927): Modules\Employee\Controllers\EmployeeEduexp->create_edu()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-12 18:19:53 --> mysqli_sql_exception: Table 'ci4ombagoescom.employees_education' doesn't exist in /var/www/html/ci4.ombagoes.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /var/www/html/ci4.ombagoes.com/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /var/www/html/ci4.ombagoes.com/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/ci4.ombagoes.com/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/ci4.ombagoes.com/system/Database/BaseBuilder.php(1718): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/ci4.ombagoes.com/Modules/Employee/Controllers/EmployeeEduexp.php(66): CodeIgniter\Database\BaseBuilder->getWhere()
+#5 /var/www/html/ci4.ombagoes.com/Modules/Employee/Controllers/EmployeeEduexp.php(53): Modules\Employee\Controllers\EmployeeEduexp->sync_edu()
+#6 /var/www/html/ci4.ombagoes.com/system/CodeIgniter.php(927): Modules\Employee\Controllers\EmployeeEduexp->create_edu()
+#7 /var/www/html/ci4.ombagoes.com/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/html/ci4.ombagoes.com/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/html/ci4.ombagoes.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-12-12 18:19:53 --> Table 'ci4ombagoescom.employees_education' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1718): CodeIgniter\Database\BaseConnection->query()
+ 5 ROOTPATH/Modules/Employee/Controllers/EmployeeEduexp.php(66): CodeIgniter\Database\BaseBuilder->getWhere()
+ 6 ROOTPATH/Modules/Employee/Controllers/EmployeeEduexp.php(53): Modules\Employee\Controllers\EmployeeEduexp->sync_edu()
+ 7 SYSTEMPATH/CodeIgniter.php(927): Modules\Employee\Controllers\EmployeeEduexp->create_edu()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-12 20:53:59 --> unlink(/var/www/html/ci4.ombagoes.com/public//uploads/employees/sdp/): Is a directory
+in ROOTPATH/Modules/Employee/Controllers/EmployeeSdp.php on line 71.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 ROOTPATH/Modules/Employee/Controllers/EmployeeSdp.php(71): unlink()
+ 3 SYSTEMPATH/CodeIgniter.php(927): Modules\Employee\Controllers\EmployeeSdp->delete()
+ 4 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-12 20:54:05 --> Trying to access array offset on value of type null
+in ROOTPATH/Modules/Employee/Controllers/EmployeeSdp.php on line 70.
+ 1 ROOTPATH/Modules/Employee/Controllers/EmployeeSdp.php(70): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(927): Modules\Employee\Controllers\EmployeeSdp->delete()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-12 20:54:13 --> Trying to access array offset on value of type null
+in ROOTPATH/Modules/Employee/Controllers/EmployeeSdp.php on line 70.
+ 1 ROOTPATH/Modules/Employee/Controllers/EmployeeSdp.php(70): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(927): Modules\Employee\Controllers\EmployeeSdp->delete()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-12 20:59:05 --> Undefined variable $eid_number
+in ROOTPATH/Modules/Employee/Views/sdp.php on line 27.
+ 1 ROOTPATH/Modules/Employee/Views/sdp.php(27): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('ROOTPATH/Modules/Employee/Views/sdp.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render()
+ 5 ROOTPATH/Modules/Employee/Controllers/EmployeeSdp.php(38): view()
+ 6 SYSTEMPATH/CodeIgniter.php(927): Modules\Employee\Controllers\EmployeeSdp->index()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-12 20:59:36 --> Undefined property: Modules\Employee\Controllers\EmployeeSdp::$employee
+in ROOTPATH/Modules/Employee/Controllers/EmployeeSdp.php on line 34.
+ 1 ROOTPATH/Modules/Employee/Controllers/EmployeeSdp.php(34): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(927): Modules\Employee\Controllers\EmployeeSdp->index()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-12 21:11:09 --> mysqli_sql_exception: Duplicate entry '2022-12-12-2' for key 'unq1' in /var/www/html/ci4.ombagoes.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /var/www/html/ci4.ombagoes.com/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /var/www/html/ci4.ombagoes.com/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/ci4.ombagoes.com/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/ci4.ombagoes.com/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/ci4.ombagoes.com/system/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 /var/www/html/ci4.ombagoes.com/system/BaseModel.php(749): CodeIgniter\Model->doInsert()
+#6 /var/www/html/ci4.ombagoes.com/system/Model.php(667): CodeIgniter\BaseModel->insert()
+#7 /var/www/html/ci4.ombagoes.com/Modules/Employee/Controllers/EmployeeHistory.php(63): CodeIgniter\Model->insert()
+#8 /var/www/html/ci4.ombagoes.com/system/CodeIgniter.php(927): Modules\Employee\Controllers\EmployeeHistory->create()
+#9 /var/www/html/ci4.ombagoes.com/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+#10 /var/www/html/ci4.ombagoes.com/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+#11 /var/www/html/ci4.ombagoes.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-12-12 21:11:09 --> Duplicate entry '2022-12-12-2' for key 'unq1'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH/BaseModel.php(749): CodeIgniter\Model->doInsert()
+ 7 SYSTEMPATH/Model.php(667): CodeIgniter\BaseModel->insert()
+ 8 ROOTPATH/Modules/Employee/Controllers/EmployeeHistory.php(63): CodeIgniter\Model->insert()
+ 9 SYSTEMPATH/CodeIgniter.php(927): Modules\Employee\Controllers\EmployeeHistory->create()
+10 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+11 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+12 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-12 21:11:18 --> mysqli_sql_exception: Duplicate entry '2022-12-12-2' for key 'unq1' in /var/www/html/ci4.ombagoes.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /var/www/html/ci4.ombagoes.com/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /var/www/html/ci4.ombagoes.com/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/ci4.ombagoes.com/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/ci4.ombagoes.com/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/ci4.ombagoes.com/system/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 /var/www/html/ci4.ombagoes.com/system/BaseModel.php(749): CodeIgniter\Model->doInsert()
+#6 /var/www/html/ci4.ombagoes.com/system/Model.php(667): CodeIgniter\BaseModel->insert()
+#7 /var/www/html/ci4.ombagoes.com/Modules/Employee/Controllers/EmployeeHistory.php(63): CodeIgniter\Model->insert()
+#8 /var/www/html/ci4.ombagoes.com/system/CodeIgniter.php(927): Modules\Employee\Controllers\EmployeeHistory->create()
+#9 /var/www/html/ci4.ombagoes.com/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+#10 /var/www/html/ci4.ombagoes.com/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+#11 /var/www/html/ci4.ombagoes.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-12-12 21:11:18 --> Duplicate entry '2022-12-12-2' for key 'unq1'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH/BaseModel.php(749): CodeIgniter\Model->doInsert()
+ 7 SYSTEMPATH/Model.php(667): CodeIgniter\BaseModel->insert()
+ 8 ROOTPATH/Modules/Employee/Controllers/EmployeeHistory.php(63): CodeIgniter\Model->insert()
+ 9 SYSTEMPATH/CodeIgniter.php(927): Modules\Employee\Controllers\EmployeeHistory->create()
+10 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+11 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+12 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-12 21:13:49 --> mysqli_sql_exception: Duplicate entry '2022-12-12-2' for key 'unq1' in /var/www/html/ci4.ombagoes.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /var/www/html/ci4.ombagoes.com/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /var/www/html/ci4.ombagoes.com/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/ci4.ombagoes.com/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/ci4.ombagoes.com/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/ci4.ombagoes.com/system/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 /var/www/html/ci4.ombagoes.com/system/BaseModel.php(749): CodeIgniter\Model->doInsert()
+#6 /var/www/html/ci4.ombagoes.com/system/Model.php(667): CodeIgniter\BaseModel->insert()
+#7 /var/www/html/ci4.ombagoes.com/Modules/Employee/Controllers/EmployeeHistory.php(63): CodeIgniter\Model->insert()
+#8 /var/www/html/ci4.ombagoes.com/system/CodeIgniter.php(927): Modules\Employee\Controllers\EmployeeHistory->create()
+#9 /var/www/html/ci4.ombagoes.com/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+#10 /var/www/html/ci4.ombagoes.com/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+#11 /var/www/html/ci4.ombagoes.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-12-12 21:13:49 --> Duplicate entry '2022-12-12-2' for key 'unq1'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH/BaseModel.php(749): CodeIgniter\Model->doInsert()
+ 7 SYSTEMPATH/Model.php(667): CodeIgniter\BaseModel->insert()
+ 8 ROOTPATH/Modules/Employee/Controllers/EmployeeHistory.php(63): CodeIgniter\Model->insert()
+ 9 SYSTEMPATH/CodeIgniter.php(927): Modules\Employee\Controllers\EmployeeHistory->create()
+10 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+11 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+12 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-12 21:35:04 --> Class "App\Libraries\UniqueValidator" not found
+in ROOTPATH/Modules/Employee/Controllers/EmployeeHistory.php on line 30.
+ 1 SYSTEMPATH/CodeIgniter.php(889): Modules\Employee\Controllers\EmployeeHistory->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-12 21:35:27 --> mysqli_sql_exception: Duplicate entry '2022-12-12-2' for key 'unq1' in /var/www/html/ci4.ombagoes.com/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /var/www/html/ci4.ombagoes.com/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /var/www/html/ci4.ombagoes.com/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/ci4.ombagoes.com/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/ci4.ombagoes.com/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/ci4.ombagoes.com/system/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 /var/www/html/ci4.ombagoes.com/system/BaseModel.php(749): CodeIgniter\Model->doInsert()
+#6 /var/www/html/ci4.ombagoes.com/system/Model.php(667): CodeIgniter\BaseModel->insert()
+#7 /var/www/html/ci4.ombagoes.com/Modules/Employee/Controllers/EmployeeHistory.php(73): CodeIgniter\Model->insert()
+#8 /var/www/html/ci4.ombagoes.com/system/CodeIgniter.php(927): Modules\Employee\Controllers\EmployeeHistory->create()
+#9 /var/www/html/ci4.ombagoes.com/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+#10 /var/www/html/ci4.ombagoes.com/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+#11 /var/www/html/ci4.ombagoes.com/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-12-12 21:35:27 --> Duplicate entry '2022-12-12-2' for key 'unq1'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH/BaseModel.php(749): CodeIgniter\Model->doInsert()
+ 7 SYSTEMPATH/Model.php(667): CodeIgniter\BaseModel->insert()
+ 8 ROOTPATH/Modules/Employee/Controllers/EmployeeHistory.php(73): CodeIgniter\Model->insert()
+ 9 SYSTEMPATH/CodeIgniter.php(927): Modules\Employee\Controllers\EmployeeHistory->create()
+10 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+11 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+12 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-12 21:39:59 --> Trying to access array offset on value of type null
+in ROOTPATH/Modules/Employee/Controllers/EmployeeHistory.php on line 58.
+ 1 ROOTPATH/Modules/Employee/Controllers/EmployeeHistory.php(58): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(927): Modules\Employee\Controllers\EmployeeHistory->create()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
