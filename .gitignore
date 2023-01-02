@@ -1,5 +1,6 @@
 writable/session/ci_session*
 writable/uploads/**/**/*.jpg
+writable/debugbar/**
 env
 dump.rdb
 composer.*
