@@ -3,5 +3,3 @@ writable/uploads/**/**/*.jpg
 writable/debugbar/**
 env
 dump.rdb
-composer.*
-spark
